@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanson's Website</title>
+    <title>Hanson's Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -31,10 +31,10 @@
 
     <section id="home">
         <img src="assets/Logo.svg" alt="Logo">
-        <h1>Welcome to my website!</h1>
+        <h1>Welcome to my portfolio!</h1>
         <h1>My Name is Ivander Hanson Setyawan</h1>
         <h1 class="typing">
-            I'm a <span></span>
+            I'm <span></span>
         </h1>
     </section>
 
@@ -169,22 +169,22 @@
                 </div>
     
                 <div class="right">
-                    <form action="">
+                    <form action="https://formspree.io/f/xldeqekl" method="POST">
                         <div>
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="Email" required>
                         </div>
                         <div>
-                            <label for="linkedIn">LinkedIn</label>
-                            <input type="text" id="linkedIn">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="Subject" required>
                         </div>
                         <div>
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5"></textarea>
+                            <textarea id="message" rows="5" name="Message" required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Submit</button>

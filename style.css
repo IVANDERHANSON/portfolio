@@ -101,19 +101,19 @@ nav div a:hover::after {
 
 @keyframes words {
     0%, 20% {
-        content: 'Student';
+        content: 'a Student';
     }
     21%, 40% {
-        content: 'Developer';
+        content: 'a Programmer';
     }
     41%, 60% {
-        content: 'Designer';
+        content: 'a Designer';
     }
     61%, 80% {
-        content: 'Freelancer';
+        content: 'a Freelancer';
     }
     81%, 100% {
-        content: 'Gamer';
+        content: 'an Entrepreneur';
     }
 }
 
@@ -294,7 +294,6 @@ nav div a:hover::after {
 }
 
 #about-me .right .tech-stack img {
-    width: 100px;
     height: 100px;
 }
 
