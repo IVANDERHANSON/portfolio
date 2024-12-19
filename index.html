@@ -49,7 +49,7 @@
                     <div class="content">
                         <img src="assets/about-me/Foto Profile.png" alt="Foto Profile" class="img">
                         <h1>Find out more about me!</h1>
-                        <a href="https://id.linkedin.com/in/ivanderhansonsetyawan" target="_blank">
+                        <a href="https://id.linkedin.com/in/ivanderhansonsetyawan" target="_blank" rel="noopener noreferrer">
                             <img src="assets/about-me/LinkedIn.svg" alt="LinkedIn">
                             <span>Ivander Hanson Setyawan</span>
                         </a>
@@ -115,42 +115,42 @@
                 <img src="assets/project/guarJIan.png" alt="Project 1">
                 <div class="description">
                     <h1>guarJIan</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
             <div>
                 <img src="assets/project/La CineMAHH.png" alt="Project 2">
                 <div class="description">
                     <h1>La CineMAHH</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
             <div>
                 <img src="assets/project/Simple Calculator.png" alt="Project 3">
                 <div class="description">
                     <h1>Simple Calculator</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
             <div>
                 <img src="assets/project/Hackathon 5.0.png" alt="Project 4">
                 <div class="description">
                     <h1>Hackathon 5.0</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
             <div>
                 <img src="assets/project/Favebook.png" alt="Project 5">
                 <div class="description">
                     <h1>Favebook</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
             <div>
                 <img src="assets/project/E-Commerce.png" alt="Project 6">
                 <div class="description">
                     <h1>E-Commerce</h1>
-                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github" class="icon"></i></a>
+                    <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github" class="icon"></i></a>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
                 </div>
     
                 <div class="right">
-                    <form action="https://formspree.io/f/xldeqekl" method="POST">
+                    <form action="https://formspree.io/f/xyzyryrj" method="POST" id="contactForm">
                         <div>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="Name" required>
@@ -180,7 +180,7 @@
                         </div>
                         <div>
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="Subject" required>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
                         <div>
                             <label for="message">Message</label>
@@ -197,9 +197,9 @@
 
     <footer>
         <div class="socialMedia">
-            <a target=”_blank” href="https://www.instagram.com/ivanderhanson"><i data-feather="instagram"></i></a>
+            <a target=”_blank” href="https://www.instagram.com/ivanderhanson" rel="noopener noreferrer"><i data-feather="instagram"></i></a>
             <a target=”_blank” href="mailto: hansonivander@gmail.com"><i data-feather="mail"></i></a>
-            <a target=”_blank” href="https://www.github.com/IVANDERHANSON"><i data-feather="github"></i></a>
+            <a target=”_blank” href="https://www.github.com/IVANDERHANSON" rel="noopener noreferrer"><i data-feather="github"></i></a>
         </div>
 
         <div class="section">
@@ -217,6 +217,13 @@
     <!-- feathericons.com -->
     <script>
         feather.replace()
+    </script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            this.reset();
+        })
     </script>
 </body>
 </html>
