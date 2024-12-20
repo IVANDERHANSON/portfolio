@@ -66,10 +66,13 @@ nav div a:hover::after {
     transform: scaleX(1);
 }
 
+section {
+    height: 50rem;
+}
+
 #home {
     top: 0;
     width: 100%;
-    height: 100vh;
     background-color: var(--color3);
     display: flex;
     justify-content: center;
@@ -145,7 +148,6 @@ nav div a:hover::after {
 
 #about-me {
     width: 100%;
-    height: 100vh;
     color: var(--color3);
     display: flex;
     justify-content: center;
@@ -310,7 +312,6 @@ th, td {
 
 #project {
     width: 100%;
-    height: 100vh;
     background-color: var(--color3);
     color: var(--color2);
     padding: 5rem 0;
@@ -390,7 +391,6 @@ th, td {
 
 #contact {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -495,7 +495,7 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 30vh;
+    height: 15rem;
     background-color: var(--color3);
     display: flex;
     justify-content: center;
