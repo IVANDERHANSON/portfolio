@@ -44,7 +44,7 @@ nav div {
 }
 
 nav div a {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--color1);
     transition: 0.3s linear;
 }
@@ -86,7 +86,7 @@ nav div a:hover::after {
 
 #home h1 {
     color: var(--color2);
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 #home .typing span {
@@ -156,7 +156,7 @@ nav div a:hover::after {
 
 #about-me .div1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #about-me .div2 {
@@ -244,7 +244,7 @@ nav div a:hover::after {
 
 #about-me .left .profile .content h1 {
     position: relative;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 #about-me .left .profile .content a {
@@ -263,7 +263,7 @@ nav div a:hover::after {
 }
 
 #about-me .left .profile .content a span {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -324,7 +324,7 @@ th, td {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 40px;
 }
 
@@ -375,7 +375,7 @@ th, td {
 }
 
 #project .div2 h1, a {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: var(--color2);
 }
 
@@ -407,7 +407,7 @@ th, td {
 #contact .card .div1 {
     text-align: center;
     margin: 15px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #contact .card .div2 {
@@ -425,7 +425,7 @@ th, td {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -451,7 +451,7 @@ th, td {
 }
 
 #contact .card .div2 .right form label {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #contact .card .div2 .right form input, textarea {
@@ -476,7 +476,7 @@ th, td {
     font-family: 'Open Sans';
     cursor: pointer;
     padding: 5px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     width: 30%;
     color: var(--color3);
@@ -520,7 +520,7 @@ footer .section {
 }
 
 footer .section a {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 footer .section a:hover {
@@ -529,7 +529,7 @@ footer .section a:hover {
 
 footer .credit {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Laptop */
@@ -593,7 +593,7 @@ footer .credit {
     }
 
     #about-me .left .profile .content h1 {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     #about-me .left .profile .content a {
