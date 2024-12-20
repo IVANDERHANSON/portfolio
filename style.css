@@ -67,7 +67,8 @@ nav div a:hover::after {
 }
 
 section {
-    height: 50rem;
+    height: 100vh;
+    min-height: 50rem;
 }
 
 #home {
