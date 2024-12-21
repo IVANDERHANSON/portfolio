@@ -479,7 +479,7 @@ th, td {
     padding: 0.3rem;
     font-size: 1.25rem;
     font-weight: bold;
-    width: 30%;
+    width: 100%;
     color: var(--color3);
     transition: 0.3s linear;
     display: flex;
