@@ -21,7 +21,7 @@ export default function NavBar() {
     return (
         <>
             <nav className="top-0 left-0 right-0 z-[9999] fixed">
-                <div className={`relative left-[5%] w-[90%] top-[1rem] h-[4.55rem] ${isHidden ? '-translate-y-[5.55rem]' : 'translate-y-0'} transition-transform duration-300 bg-white flex justify-evenly items-center border-[0.05rem] border-solid border-black border-opacity-[0.5] shadow-[0.01rem_0.01rem_0.31rem] shadow-black rounded-full`}>
+                <div className={`relative left-[5%] w-[90%] top-[1rem] h-[4.55rem] ${isHidden ? '-translate-y-[5.765rem]' : 'translate-y-0'} transition-transform duration-300 bg-white flex justify-evenly items-center border-[0.05rem] border-solid border-black border-opacity-[0.5] shadow-[0.01rem_0.01rem_0.31rem] shadow-black rounded-full`}>
                     <a href="#home"
                         className={ActiveNavMenu === 'Home' ? NavMenuActiveStyle : NavMenuStyle}
                         onClick={() => SetActiveNavMenu('Home')}
