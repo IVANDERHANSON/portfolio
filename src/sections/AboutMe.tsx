@@ -1,7 +1,7 @@
-export default function AboutMe() {
+export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     return (
         <>
-            <section id="about-me" className="w-full h-[200vh] bg-white">
+            <section ref={RefProp} className="w-full h-[200vh] bg-white">
 
             </section>
         </>

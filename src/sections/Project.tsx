@@ -1,7 +1,7 @@
-export default function Project() {
+export default function Project({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     return (
         <>
-            <section id="project" className="w-full h-screen bg-blue-800">
+            <section ref={RefProp} className="w-full h-screen bg-blue-800">
 
             </section>
         </>

@@ -1,7 +1,10 @@
-export default function Home({ FotoProfile, LinkedInLogo }: { FotoProfile: string, LinkedInLogo: string }) {
+import FotoProfile from '../assets/Foto Profile.png'
+import LinkedInLogo from '../assets/LinkedIn.svg'
+
+export default function Home({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     return (
         <>
-            <section id="home" className="w-full h-screen bg-white flex">
+            <section ref={RefProp} className="w-full h-screen bg-white flex">
                 <div className="relative w-[50%] h-screen flex items-center">
                     <div className="
                         relative w-[45vh] h-[45vh] rounded-[50%] bg-white overflow-hidden left-[20%]
