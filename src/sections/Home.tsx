@@ -37,7 +37,7 @@ export default function Home({ RefProp }: { RefProp: React.RefObject<HTMLElement
                     <h1>Welcome to my portfolio!</h1>
                     <h1>My name is Ivander Hanson Setyawan</h1>
                     <h1>
-                        I'm <span className='relative text-yellow-100 before:content-["a Student"] before:animate-[words_20s_infinite] after:content-[""] after:absolute after:w-[calc(100%+0.5rem)] after:h-[calc(100%+0.5rem)] after:bg-blue-800 after:border-l-[0.3rem] after:border-solid after:border-yellow-100 after:right-[-0.5rem] after:animate-[cursor_0.8s_infinite_,_type_20s_steps(15)_infinite]'></span>
+                        I'm <span className='relative text-yellow-100 before:content-["a Student"] before:animate-[words_20s_infinite] after:content-[""] after:absolute after:w-[calc(100%+0.5rem)] after:h-[calc(100%+0.5rem)] after:bg-blue-800 after:border-l-[0.3rem] after:border-solid after:border-yellow-100 after:right-[-0.5rem] after:animate-[cursor_0.8s_infinite_,_type_20s_steps(32)_infinite]'></span>
                     </h1>
                 </div>
             </section>
