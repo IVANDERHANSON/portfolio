@@ -22,7 +22,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Education
                         </h1>
-                        <div className="w-full flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
+                        <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
                             <div className="
                                 relative w-full p-[2%] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] cursor-pointer transition-all duration-500
                                 hover:shadow-[0.01rem_0.01rem_0.155rem] hover:shadow-blue-800
@@ -54,7 +54,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Work Experience
                         </h1>
-                        <div className="w-full flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
+                        <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
                             <div className="
                                 relative w-full p-[2%] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] cursor-pointer transition-all duration-500
                                 hover:shadow-[0.01rem_0.01rem_0.155rem] hover:shadow-blue-800
@@ -86,7 +86,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Organization Experience
                         </h1>
-                        <div className="w-full flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
+                        <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
                             <div className="
                                 relative w-full p-[2%] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] cursor-pointer transition-all duration-500
                                 hover:shadow-[0.01rem_0.01rem_0.155rem] hover:shadow-blue-800
