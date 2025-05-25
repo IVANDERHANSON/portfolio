@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from 'react-router-dom';
 
-const NavMenuStyle = "text-[1.25rem] text-black duration-300 ease-linear hover:text-blue-800 after:content-[''] after:block after:pb-[0.625rem] after:border-b-[0.05rem] border-solid after:border-blue-800 after:scale-x-0 after:duration-300 after:ease-linear hover:after:scale-x-100"
-const NavMenuActiveStyle = "text-[1.25rem] text-blue-800 duration-300 ease-linear after:content-[''] after:block after:pb-[0.625rem] after:border-b-[0.05rem] border-solid after:border-blue-800 after:scale-x-100 after:duration-300 after:ease-linear"
+const NavMenuStyle = "text-[1.25rem] text-black duration-300 ease-linear hover:text-blue-800 after:content-[''] after:block after:border-b-[0.05rem] border-solid after:border-blue-800 after:scale-x-0 after:duration-300 after:ease-linear hover:after:scale-x-100"
+const NavMenuActiveStyle = "text-[1.25rem] text-blue-800 duration-300 ease-linear after:content-[''] after:block after:border-b-[0.05rem] border-solid after:border-blue-800 after:scale-x-100 after:duration-300 after:ease-linear"
 
 export default function NavBar({ ChangeSection }: { ChangeSection: (Section: string) => void }) {
     const [ActiveNavMenu, SetActiveNavMenu] = useState('Home');

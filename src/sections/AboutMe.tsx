@@ -1,11 +1,12 @@
+const SubSectionStyle = "w-full border-b-[0.1rem] border-dotted border-black"
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
 
 export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     return (
         <>
             <section ref={RefProp} className="w-full h-[200vh] bg-white flex justify-center items-center">
-                <div className="w-[90%] h-[calc(100%-2*6rem)] flex items-center flex-col gap-[5rem]">
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                <div className="w-[80%] h-[calc(100%-2*6rem)] flex items-center flex-col gap-[5rem] border-[0.05rem] border-solid border-black border-opacity-[0.5] shadow-[0.01rem_0.01rem_0.31rem] shadow-black p-10">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             About Me
                         </h1>
@@ -20,31 +21,31 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         </p>
                     </div>
 
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             Education
                         </h1>
                     </div>
 
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             Work Experience
                         </h1>
                     </div>
 
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             Organization Experience
                         </h1>
                     </div>
 
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             Skills
                         </h1>
                     </div>
 
-                    <div className="w-full border-b-[0.1rem] border-dotted border-blue-800">
+                    <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             Certifications
                         </h1>
