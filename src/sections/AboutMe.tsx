@@ -69,13 +69,13 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                 </div>
 
                                 <div className='flex justify-start items-center flex-wrap gap-[0.5rem] p-[0.5rem]'>
-                                    <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
+                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
                                         <img src={BackEndTutor} alt="Back-End Tutor" />
                                     </div>
-                                    <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
+                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
                                         <img src={BE_D} alt="BE_D" />
                                     </div>
-                                    <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
+                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
                                         <img src={BE_J} alt="BE_J" />
                                     </div>
                                 </div>
