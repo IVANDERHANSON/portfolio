@@ -1,7 +1,7 @@
-import BNCCLogo from '../assets/BNCCLogo.png'
-import BE1 from '../assets/BE-D.jpg'
-import BE2 from '../assets/BE-J.jpg'
-import BackEndTutor from '../assets/Back-End Tutor.jpg'
+import BNCCLogo from '../assets/sections/AboutMe/BNCC Logo.png'
+import BackEndTutor from '../assets/sections/AboutMe/Back-End Tutor.jpg'
+import BE_D from '../assets/sections/AboutMe/BE_D.jpg'
+import BE_J from '../assets/sections/AboutMe/BE_J.jpg'
 
 const SubSectionStyle = "w-full border-b-[0.05rem] border-solid border-blue-800 border-opacity-[0.2]"
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
@@ -56,7 +56,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                             Jakarta
                                         </h2>
                                     </div>
-                                    <img src={BNCCLogo} alt="BNCCLogo" className='h-[2rem]' />
+                                    <img src={BNCCLogo} alt="BNCC Logo" className='h-[2rem]' />
                                 </div>
                                 
                                 <div className='my-[1rem]'>
@@ -70,13 +70,13 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
 
                                 <div className='flex justify-start items-center flex-wrap gap-[0.5rem] p-[0.5rem]'>
                                     <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BackEndTutor} alt="" />
+                                        <img src={BackEndTutor} alt="Back-End Tutor" />
                                     </div>
                                     <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BE1} alt="" />
+                                        <img src={BE_D} alt="BE_D" />
                                     </div>
                                     <div className='flex justify-center items-center w-[8rem] h-[5rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BE2} alt="" />
+                                        <img src={BE_J} alt="BE_J" />
                                     </div>
                                 </div>
                             </div>

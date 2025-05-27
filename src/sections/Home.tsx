@@ -1,5 +1,5 @@
-import FotoProfile from '../assets/Foto Profile.png'
-import LinkedInLogo from '../assets/LinkedIn.svg'
+import FotoProfile from '../assets/sections/Home/Foto Profile.png'
+import LinkedInLogo from '../assets/sections/Home/LinkedIn Logo.svg'
 
 export default function Home({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     return (
@@ -23,7 +23,7 @@ export default function Home({ RefProp }: { RefProp: React.RefObject<HTMLElement
                                 Find out more about me!
                             </h1>
                             <a href="https://www.linkedin.com/in/ivanderhansonsetyawan" target="_blank" rel="noopener noreferrer" className="relative flex justify-center items-center flex-wrap gap-4">
-                                <img src={LinkedInLogo} alt="LinkedInLogo" className="w-[2rem] h-[2rem]" />
+                                <img src={LinkedInLogo} alt="LinkedIn Logo" className="w-[2rem] h-[2rem]" />
                                 <span className="text-blue-800 text-[1.4rem] text-center font-bold">Ivander Hanson Setyawan</span>
                             </a>
                         </div>
