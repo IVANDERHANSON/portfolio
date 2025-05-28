@@ -1,7 +1,3 @@
-export interface SectionProp {
-    RefProp: React.RefObject<HTMLElement | null>;
-}
-
 export interface Image {
     Source: string;
     Alternative: string;
