@@ -1,7 +1,5 @@
-import BNCCLogo from '../assets/sections/AboutMe/BNCC Logo.png'
-import BackEndTutor from '../assets/sections/AboutMe/Back-End Tutor.jpg'
-import BE_D from '../assets/sections/AboutMe/BE_D.jpg'
-import BE_J from '../assets/sections/AboutMe/BE_J.jpg'
+import { AboutMeData } from "../data/AboutMeData"
+import Journey from "../components/Journey"
 
 const SubSectionStyle = "w-full border-b-[0.05rem] border-solid border-blue-800 border-opacity-[0.2]"
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
@@ -33,54 +31,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Work Experience
                         </h1>
-                        <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.3rem] border-solid border-blue-800 border-opacity-[0.2]">
-                            <div className="
-                                relative w-full p-[2%] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] cursor-pointer transition-all duration-500
-                                hover:shadow-[0.01rem_0.01rem_0.155rem] hover:shadow-blue-800
-                                before:content-[''] before:absolute before:top-[-0.08rem] before:right-[calc(100%+2rem-0.55rem)] before:bg-blue-800 before:w-[1.5rem] before:h-[1.5rem] before:rounded-[50%] before:border-[0.1rem] before:border-solid before:border-white
-                            ">
-                                <div className='w-full flex justify-between'>
-                                    <div>
-                                        <div className="flex items-center gap-[0.3rem] font-bold">
-                                            <h2>
-                                                Back-End Tutor
-                                            </h2>
-                                            <div className="w-[0.3rem] h-[0.3rem] bg-black opacity-[0.5] rounded-[50%]"></div>
-                                            <h2>Part-time</h2>
-                                        </div>
-                                        <h2 className="opacity-[0.5]">
-                                            Bina Nusantara Computer Club
-                                            <br />
-                                            Oct 2023 - Sept 2024
-                                            <br />
-                                            Jakarta
-                                        </h2>
-                                    </div>
-                                    <img src={BNCCLogo} alt="BNCC Logo" className='h-[2rem]' />
-                                </div>
-                                
-                                <div className='my-[1rem]'>
-                                    <p>
-                                        As a Back-End Tutor, I taught Laravel framework for BE-D and BE-J classes, each with about ten members. I was very happy to share my experiences with members, as it allowed me to improve my skills and learn new things. I had the following job description:
-                                        <br />1. Taught and prepared materials for 13 sessions.
-                                        <br />2. Ensured class members could understand the material.
-                                        <br />3. Assessed Mid Projects and Final Projects.
-                                    </p>
-                                </div>
-
-                                <div className='flex justify-start items-center flex-wrap gap-[0.5rem] p-[0.5rem]'>
-                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BackEndTutor} alt="Back-End Tutor" />
-                                    </div>
-                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BE_D} alt="BE_D" />
-                                    </div>
-                                    <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black'>
-                                        <img src={BE_J} alt="BE_J" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Journey Props={AboutMeData.WorkExperience} />
                     </div>
 
                     <div className={SubSectionStyle}>

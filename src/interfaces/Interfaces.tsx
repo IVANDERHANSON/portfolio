@@ -3,7 +3,7 @@ export interface Image {
     Alternative: string;
 }
 
-export interface JourneyCardProps {
+export interface JourneyProps {
     Position: string;
     Type: string;
     OrganizationName: string;
