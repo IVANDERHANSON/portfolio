@@ -1,3 +1,6 @@
+import { useRef } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+
 import './Portfolio.css'
 
 import NavBar from './components/NavBar'
@@ -6,9 +9,6 @@ import AboutMe from './sections/AboutMe'
 import Project from './sections/Project'
 import Publication from './sections/Publication'
 import Footer from './components/Footer'
-
-import { useRef } from 'react'
-import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   const HomeRef = useRef<HTMLElement | null>(null)

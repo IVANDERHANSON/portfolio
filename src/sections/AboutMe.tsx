@@ -1,4 +1,5 @@
 import { AboutMeData } from "../data/AboutMeData"
+
 import Journey from "../components/Journey"
 
 const SubSectionStyle = "w-full border-b-[0.05rem] border-solid border-blue-800 border-opacity-[0.2]"

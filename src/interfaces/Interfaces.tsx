@@ -13,3 +13,8 @@ export interface JourneyProps {
     Description: string;
     Images: Image[];
 }
+
+export interface DialogAction {
+    Open: (Images: Image[], Index: number) => void;
+    Close: () => void;
+}
