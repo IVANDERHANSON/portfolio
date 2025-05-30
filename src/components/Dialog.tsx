@@ -36,34 +36,40 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
         <>
             <dialog
                 ref={DialogRef}
-                className="min-w-full min-h-screen bg-black bg-opacity-90 p-0 m-0 overflow-hidden"
+                className="min-w-full min-h-screen bg-black bg-opacity-[0.5] p-0 m-0 overflow-hidden"
             >
-                <div className="relative min-w-full min-h-screen flex items-center justify-center">
+                <div className="relative min-w-full min-h-screen flex items-center justify-center flex-col gap-[1rem]">
                     <img
                         src={CurrentImages[CurrentImageIndex]?.Source}
                         alt={CurrentImages[CurrentImageIndex]?.Alternative}
                         className="h-[40rem]"
                     />
 
+                    <p
+                        className="text-white p-2 bg-black/80"
+                    >
+                        {CurrentImages[CurrentImageIndex]?.Alternative}
+                    </p>
+
                     <button
                         onClick={CloseDialog}
-                        className="absolute top-4 right-4 text-white p-2 bg-black/50 rounded-full hover:bg-black/80"
+                        className="absolute top-4 right-4 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
                     >
                         X
                     </button>
 
                     <button
                         onClick={PrevImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2 bg-black/50 rounded-full hover:bg-black/80"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
                     >
-                        LEFT
+                        &lt;
                     </button>
 
                     <button
                         onClick={NextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 text-white p-2 bg-black/50 rounded-full hover:bg-black/80"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
                     >
-                        RIGHT
+                        &gt;
                     </button>
                 </div>
             </dialog>
