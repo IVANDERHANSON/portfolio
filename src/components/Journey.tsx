@@ -20,11 +20,11 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                 " key={PropIndex}>
                     <div className='w-full flex justify-between'>
                         <div>
-                            <div className="flex items-center gap-[0.3rem] font-bold">
+                            <div className="flex items-center gap-[0.3rem] font-bold text-blue-800">
                                 <h2>
                                     {Prop.Position}
                                 </h2>
-                                <div className="w-[0.3rem] h-[0.3rem] bg-black opacity-[0.5] rounded-[50%]"></div>
+                                <div className="w-[0.15rem] h-[0.15rem] bg-blue-800 rounded-[50%]"></div>
                                 <h2>{Prop.Type}</h2>
                             </div>
                             <h2 className="opacity-[0.5]">
@@ -49,7 +49,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                         </p>
                     </div>
 
-                    <div className='flex justify-start items-center flex-wrap gap-[0.5rem] p-[0.5rem]'>
+                    <div className='flex justify-start items-center flex-wrap gap-[0.5rem]'>
                         {Prop.Images.map((Image, ImageIndex) => (
                             <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black cursor-pointer transition-all duration-300 hover:scale-[105%]' key={ImageIndex}>
                                 <img src={Image.Source} alt={Image.Alternative} onClick={() => OpenDialog(Prop.Images, ImageIndex)} />
