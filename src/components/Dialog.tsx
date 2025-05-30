@@ -55,7 +55,7 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
                         onClick={CloseDialog}
                         className="absolute top-4 right-4 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
                     >
-                        X
+                        x
                     </button>
 
                     <button
