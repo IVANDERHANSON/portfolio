@@ -24,8 +24,12 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                                 <h2>
                                     {Prop.Position}
                                 </h2>
-                                <div className="w-[0.15rem] h-[0.15rem] bg-blue-800 rounded-[50%]"></div>
-                                <h2>{Prop.Type}</h2>
+                                {Prop.Type !== '' && (
+                                    <>
+                                        <div className="w-[0.15rem] h-[0.15rem] bg-blue-800 rounded-[50%]"></div>
+                                        <h2>{Prop.Type}</h2>
+                                    </>
+                                )}
                             </div>
                             <h2 className="opacity-[0.5]">
                                 {Prop.OrganizationName}

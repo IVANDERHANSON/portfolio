@@ -1,5 +1,6 @@
 import { JourneyProps } from "../interfaces/Interfaces"
 
+import BINUSLogo from '../assets/sections/AboutMe/BINUS Logo.png'
 import BCALogo from '../assets/sections/AboutMe/BCA Logo.webp'
 import BinaNusantaraITDivisionLogo from '../assets/sections/AboutMe/Bina Nusantara IT Division Logo.png'
 import ITDivisionCertificate from '../assets/sections/AboutMe/IT Division Certificate.png'
@@ -11,14 +12,43 @@ import BE_D from '../assets/sections/AboutMe/BE_D.jpg'
 import BE_J from '../assets/sections/AboutMe/BE_J.jpg'
 
 interface AboutMeDataStructure {
-    Education: JourneyProps[];
+    EducationAndScholarship: JourneyProps[];
     WorkExperience: JourneyProps[];
     OrganizationExperience: JourneyProps[];
 }
 
 export const AboutMeData: AboutMeDataStructure = {
-    Education: [
-
+    EducationAndScholarship: [
+        {
+            Position: 'Bachelor\'s Degree',
+            Type: 'Computer Science',
+            OrganizationName: 'BINUS University',
+            Periode: '2022 - 2026',
+            Place: 'Jakarta',
+            OrganizationImage: {
+                Source: BINUSLogo,
+                Alternative: 'BINUS Logo'
+            },
+            Description: 'Streaming: Software Engineering\nElective Course: Mobile Programming',
+            Images: [
+                
+            ]
+        },
+        {
+            Position: 'Scholarship Mentor',
+            Type: '',
+            OrganizationName: 'BINUS University',
+            Periode: 'Sep 2024 - Jan 2025',
+            Place: 'Jakarta',
+            OrganizationImage: {
+                Source: BINUSLogo,
+                Alternative: 'BINUS Logo'
+            },
+            Description: 'Here I got the opportunity from the Student Advisory and Support Center (SASC) to become a scholarship mentor during the fifth semester. As a mentor, I helped mentees who still had difficulty in achieving the academic achievement standards set by BINUS University. By helping mentees, I could also improve soft skills, increase academic knowledge, and get a tuition scholarship of 16 credits.',
+            Images: [
+                
+            ]
+        }
     ],
     WorkExperience: [
         {
@@ -90,6 +120,35 @@ export const AboutMeData: AboutMeDataStructure = {
         }
     ],
     OrganizationExperience: [
-
+        {
+            Position: 'Research & Development Manager',
+            Type: '',
+            OrganizationName: 'Bina Nusantara Computer Club',
+            Periode: 'Oct 2023 - Oct 2024',
+            Place: 'Jakarta',
+            OrganizationImage: {
+                Source: BNCCLogo,
+                Alternative: 'BNCC Logo'
+            },
+            Description: '',
+            Images: [
+                
+            ]
+        },
+        {
+            Position: 'Activist',
+            Type: '',
+            OrganizationName: 'Bina Nusantara Computer Club',
+            Periode: 'Nov 2022 - Oct 2023',
+            Place: 'Jakarta',
+            OrganizationImage: {
+                Source: BNCCLogo,
+                Alternative: 'BNCC Logo'
+            },
+            Description: '',
+            Images: [
+                
+            ]
+        }
     ]
 }

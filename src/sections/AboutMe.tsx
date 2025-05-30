@@ -24,9 +24,9 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
 
                     <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
-                            Education
+                            Education & Scholarship
                         </h1>
-                        <Journey Props={AboutMeData.Education} />
+                        <Journey Props={AboutMeData.EducationAndScholarship} />
                     </div>
 
                     <div className={SubSectionStyle}>
