@@ -2,7 +2,6 @@ import { AboutMeData } from "../data/AboutMeData"
 
 import Journey from "../components/Journey"
 
-const SubSectionStyle = "w-full border-b-[0.05rem] border-solid border-blue-800 border-opacity-[0.2]"
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
 
 export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
@@ -10,7 +9,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
         <>
             <section ref={RefProp} className="w-full bg-white flex justify-center items-center">
                 <div className="w-[80%] my-[6rem] flex items-center flex-col gap-[2rem] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] shadow-[0.01rem_0.01rem_0.155rem] shadow-blue-800 p-10 bg-blue-800 bg-opacity-[0.1]">
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             About Me
                         </h1>
@@ -22,34 +21,34 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         </p>
                     </div>
 
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Education &amp; Scholarship
                         </h1>
                         <Journey Props={AboutMeData.EducationAndScholarship} />
                     </div>
 
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Work Experience
                         </h1>
                         <Journey Props={AboutMeData.WorkExperience} />
                     </div>
 
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Organization Experience
                         </h1>
                         <Journey Props={AboutMeData.OrganizationExperience} />
                     </div>
 
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Skills
                         </h1>
                     </div>
 
-                    <div className={SubSectionStyle}>
+                    <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Certifications
                         </h1>
