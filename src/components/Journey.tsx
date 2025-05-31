@@ -16,7 +16,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
             <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.2rem] border-solid border-blue-800 border-opacity-[0.1]">
                 {Props.map((Prop, PropIndex) => (<div className="
                     relative w-full p-[2%] bg-blue-800 bg-opacity-[0.1]
-                    before:content-[''] before:absolute before:top-[-0.01rem] before:right-[calc(100%+2rem-0.6rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white/80
+                    before:content-[''] before:absolute before:top-[-0.03rem] before:right-[calc(100%+2rem-0.6rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white/80
                 " key={PropIndex}>
                     <div className='w-full flex justify-between'>
                         <div>
