@@ -48,7 +48,7 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
                     <p
                         className="text-white p-2 bg-black/80 text-center"
                     >
-                        {CurrentImages[CurrentImageIndex]?.Alternative}
+                        {CurrentImageIndex + 1}. {CurrentImages[CurrentImageIndex]?.Alternative}
                     </p>
 
                     <button
