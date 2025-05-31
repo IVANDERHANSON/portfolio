@@ -53,7 +53,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                         </p>
                     </div>
 
-                    {Prop.Images.length !== 0 && (<div className='flex justify-start items-center flex-wrap gap-[0.5rem] mt-[1rem]'>
+                    {Prop.Images.length !== 0 && (<div className='flex justify-start items-center flex-wrap gap-[1rem] mt-[1rem]'>
                         {Prop.Images.map((Image, ImageIndex) => (
                             <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black cursor-pointer transition-all duration-300 hover:scale-[105%]' key={ImageIndex}>
                                 <img src={Image.Source} alt={Image.Alternative} onClick={() => OpenDialog(Prop.Images, ImageIndex)} />
