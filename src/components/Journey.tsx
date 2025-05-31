@@ -15,8 +15,8 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
         <>
             <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.2rem] border-solid border-blue-800 border-opacity-[0.1]">
                 {Props.map((Prop, PropIndex) => (<div className="
-                    relative w-full p-[2%] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] bg-blue-800 bg-opacity-[0.1]
-                    before:content-[''] before:absolute before:top-[-0.08rem] before:right-[calc(100%+2rem-0.55rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white
+                    relative w-full p-[2%] bg-blue-800 bg-opacity-[0.1]
+                    before:content-[''] before:absolute before:top-[-0.08rem] before:right-[calc(100%+2rem-0.6rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white/80
                 " key={PropIndex}>
                     <div className='w-full flex justify-between'>
                         <div>
@@ -42,7 +42,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                         <img src={Prop.OrganizationImage.Source} alt={Prop.OrganizationImage.Alternative} className='h-[2rem]' />
                     </div>
 
-                    <div className='my-[1rem] text-justify'>
+                    <div className='mt-[1rem] text-justify'>
                         <p>
                             {Prop.Description.split('\n').map((Line, LineIndex) => (
                                 <span key={LineIndex}>
@@ -53,13 +53,13 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                         </p>
                     </div>
 
-                    <div className='flex justify-start items-center flex-wrap gap-[0.5rem]'>
+                    {Prop.Images.length !== 0 && (<div className='flex justify-start items-center flex-wrap gap-[0.5rem] mt-[1rem]'>
                         {Prop.Images.map((Image, ImageIndex) => (
                             <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black cursor-pointer transition-all duration-300 hover:scale-[105%]' key={ImageIndex}>
                                 <img src={Image.Source} alt={Image.Alternative} onClick={() => OpenDialog(Prop.Images, ImageIndex)} />
                             </div>
                         ))}
-                    </div>
+                    </div>)}
                 </div>))}
             </div>
 

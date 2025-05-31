@@ -9,7 +9,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
     return (
         <>
             <section ref={RefProp} className="w-full bg-white flex justify-center items-center">
-                <div className="w-[80%] my-[6rem] flex items-center flex-col gap-[2rem] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] shadow-[0.01rem_0.01rem_0.155rem] shadow-blue-800 p-10">
+                <div className="w-[80%] my-[6rem] flex items-center flex-col gap-[2rem] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] shadow-[0.01rem_0.01rem_0.155rem] shadow-blue-800 p-10 bg-blue-800 bg-opacity-[0.1]">
                     <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
                             About Me
@@ -24,7 +24,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
 
                     <div className={SubSectionStyle}>
                         <h1 className={HeadingStyle}>
-                            Education & Scholarship
+                            Education &amp; Scholarship
                         </h1>
                         <Journey Props={AboutMeData.EducationAndScholarship} />
                     </div>

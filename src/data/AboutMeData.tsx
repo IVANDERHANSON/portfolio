@@ -9,8 +9,8 @@ import SSG2BukaPuasaBersama2024 from '../assets/sections/AboutMe/SSG 2 Buka Puas
 import SSG2GatheringEvent2024 from '../assets/sections/AboutMe/SSG 2 Gathering Event 2024.jpeg'
 import BNCCLogo from '../assets/sections/AboutMe/BNCC Logo.png'
 import BackEndDevelopmentTutorCertificate from '../assets/sections/AboutMe/Back-End Development Tutor Certificate.jpg'
-import BE_D from '../assets/sections/AboutMe/BE_D.jpg'
-import BE_J from '../assets/sections/AboutMe/BE_J.jpg'
+import BE_D from '../assets/sections/AboutMe/BE-D.jpg'
+import BE_J from '../assets/sections/AboutMe/BE-J.jpg'
 
 import RnD from '../assets/sections/AboutMe/Research & Development.jpg'
 import TechnoScape2024FirstMeeting from '../assets/sections/AboutMe/TechnoScape 2024 First Meeting.jpg'
@@ -93,11 +93,11 @@ export const AboutMeData: AboutMeDataStructure = {
                 },
                 {
                     Source: SSG2BukaPuasaBersama2024,
-                    Alternative: 'SSG2 Buka Puasa Bersama 2024'
+                    Alternative: 'SSG-2 Buka Puasa Bersama 2024'
                 },
                 {
                     Source: SSG2GatheringEvent2024,
-                    Alternative: 'SSG2 Gathering Event 2024'
+                    Alternative: 'SSG-2 Gathering Event 2024'
                 }
             ]
         },
@@ -119,11 +119,11 @@ export const AboutMeData: AboutMeDataStructure = {
                 },
                 {
                     Source: BE_D,
-                    Alternative: 'BE_D'
+                    Alternative: 'BE-D'
                 },
                 {
                     Source: BE_J,
-                    Alternative: 'BE_J'
+                    Alternative: 'BE-J'
                 }
             ]
         }
