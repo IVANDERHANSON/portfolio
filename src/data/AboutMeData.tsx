@@ -1,6 +1,7 @@
 import { JourneyProps } from "../interfaces/Interfaces"
 
 import BINUSLogo from '../assets/sections/AboutMe/BINUS Logo.png'
+
 import BCALogo from '../assets/sections/AboutMe/BCA Logo.webp'
 import BinaNusantaraITDivisionLogo from '../assets/sections/AboutMe/Bina Nusantara IT Division Logo.png'
 import ITDivisionCertificate from '../assets/sections/AboutMe/IT Division Certificate.png'
@@ -10,6 +11,14 @@ import BNCCLogo from '../assets/sections/AboutMe/BNCC Logo.png'
 import BackEndDevelopmentTutorCertificate from '../assets/sections/AboutMe/Back-End Development Tutor Certificate.jpg'
 import BE_D from '../assets/sections/AboutMe/BE_D.jpg'
 import BE_J from '../assets/sections/AboutMe/BE_J.jpg'
+
+import RnD from '../assets/sections/AboutMe/Research & Development.jpg'
+import TechnoScape2024FirstMeeting from '../assets/sections/AboutMe/TechnoScape 2024 First Meeting.jpg'
+import BNCCActivistCertificate from '../assets/sections/AboutMe/BNCC Activist Certificate.jpg'
+import TPMCertificate from '../assets/sections/AboutMe/TPM Certificate.png'
+import BNCCActivistGatheringEvent from '../assets/sections/AboutMe/BNCC Activist Gathering Event.jpg'
+import TechnoScape2023Certificate from '../assets/sections/AboutMe/TechnoScape 2023 Certificate.jpg'
+import BNCCOpeningSeason2023 from '../assets/sections/AboutMe/BNCC Opening Season 2023.jpg'
 
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
@@ -76,7 +85,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BinaNusantaraITDivisionLogo,
                 Alternative: 'Bina Nusantara IT Division Logo'
             },
-            Description: 'Here I worked in Software Solution Group 2 that handles Customer Relationship Management. As a Programmer, I had the following job description:\n1. Developed web applications to maintain Customer Relationships.\n2. Developed BINUS Chatbot (CODY).\n3. Conducted testing to ensure that the software created met UI/UX requirements.\n4. Contributed to the Proof of Concept for a Generative AI Chatbot.\n5. Migrated a project from Salesforce Classic to Lightning Experience.\n6. Developed REST API in Salesforce.',
+            Description: '1. Developed web applications to maintain Customer Relationships.\n2. Developed BINUS Chatbot (CODY).\n3. Conducted testing to ensure that the software created met UI/UX requirements.\n4. Contributed to the Proof of Concept for a Generative AI Chatbot.\n5. Migrated a project from Salesforce Classic to Lightning Experience.\n6. Developed REST API in Salesforce.',
             Images: [
                 {
                     Source: ITDivisionCertificate,
@@ -102,7 +111,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: 'As a Back-End Development Tutor, I taught Laravel framework for BE-D and BE-J classes, each with about ten members. I was very happy to share my experiences with members, as it allowed me to improve my skills and learn new things. I had the following job description:\n1. Taught and prepared materials for 13 sessions.\n2. Ensured class members could understand the material.\n3. Assessed Mid Projects and Final Projects.',
+            Description: '1. Taught and prepared materials (Laravel framework) for 13 sessions.\n2. Ensured class members could understand the material.\n3. Assessed Mid Projects and Final Projects.',
             Images: [
                 {
                     Source: BackEndDevelopmentTutorCertificate,
@@ -130,9 +139,16 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: '',
+            Description: '1. Led Learning Management System development project for members.\n2. Led Design System development project for BNCC.\n3. Led RnD team weekly stand-up meetings regularly.\n4. Migrated old server to new server.\n5. Maintained new server, databases, and websites.\n6. Conducted relevant technology research to improve BNCC operational activities.\n7. Handled Knowledge Management Programs to prepare Activists to become the next RnD.\n8. Conducted documentation for all RnD programs.\n9. Led TechnoScape 2024 website project.',
             Images: [
-                
+                {
+                    Source: RnD,
+                    Alternative: 'Research & Development'
+                },
+                {
+                    Source: TechnoScape2024FirstMeeting,
+                    Alternative: 'TechnoScape 2024 First Meeting'
+                }
             ]
         },
         {
@@ -145,9 +161,28 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: '',
+            Description: '1. Project Manager and Back-End Developer at TPM.\n2. Activist Gathering Event Committee.\n3. Publication Staff at TechnoScape 2023.\n4. Design Coordinator at BNCC Workshop 2023.\n5. Design Staff at BNCC Opening Season 2023.\n6. Design Staff at BNCC Corporate Social Responsibility 2023.\n7. Completed Technical Training (Web Development, Server, & Design System).\n8. Completed Leadership Development Program.',
             Images: [
-                
+                {
+                    Source: BNCCActivistCertificate,
+                    Alternative: 'BNCC Activist Certificate'
+                },
+                {
+                    Source: TPMCertificate,
+                    Alternative: 'TPM Certificate'
+                },
+                {
+                    Source: BNCCActivistGatheringEvent,
+                    Alternative: 'BNCC Activist Gathering Event'
+                },
+                {
+                    Source: TechnoScape2023Certificate,
+                    Alternative: 'TechnoScape 2023 Certificate'
+                },
+                {
+                    Source: BNCCOpeningSeason2023,
+                    Alternative: 'BNCC Opening Season 2023'
+                }
             ]
         }
     ]

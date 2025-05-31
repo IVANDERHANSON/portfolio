@@ -14,7 +14,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             About Me
                         </h1>
-                        <p className="my-[2rem]">
+                        <p className="my-[2rem] text-justify">
                             Hello 👋 my name is Ivander Hanson Setyawan, you can called me Hanson.
                             <br />
                             <br />
