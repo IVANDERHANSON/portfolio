@@ -22,6 +22,7 @@ import BNCCOpeningSeason2023 from '../assets/sections/AboutMe/BNCC Opening Seaso
 
 import ReactJS from '../assets/sections/AboutMe/React JS.png'
 import TypeScript from '../assets/sections/AboutMe/TypeScript.png'
+import TailwindCSS from '../assets/sections/AboutMe/Tailwind CSS.png'
 import Laravel from '../assets/sections/AboutMe/Laravel.png'
 import NETCore from '../assets/sections/AboutMe/NET Core.png'
 import SQL from '../assets/sections/AboutMe/SQL.png'
@@ -29,7 +30,11 @@ import CPP from '../assets/sections/AboutMe/C++.png'
 import C from '../assets/sections/AboutMe/C.png'
 import Python from '../assets/sections/AboutMe/Python.webp'
 import Java from '../assets/sections/AboutMe/Java.png'
+import AndroidStudio from '../assets/sections/AboutMe/Android Studio.png'
+import git from '../assets/sections/AboutMe/git.png'
 import Figma from '../assets/sections/AboutMe/Figma.png'
+import AfterEffects from '../assets/sections/AboutMe/After Effects.webp'
+import OutSystems from '../assets/sections/AboutMe/OutSystems.png'
 
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
@@ -235,6 +240,10 @@ export const AboutMeData: AboutMeDataStructure = {
             Alternative: 'TypeScript'
         },
         {
+            Source: TailwindCSS,
+            Alternative: 'Tailwind CSS'
+        },
+        {
             Source: Laravel,
             Alternative: 'Laravel'
         },
@@ -263,8 +272,24 @@ export const AboutMeData: AboutMeDataStructure = {
             Alternative: 'Java'
         },
         {
+            Source: AndroidStudio,
+            Alternative: 'Android Studio'
+        },
+        {
+            Source: git,
+            Alternative: 'git'
+        },
+        {
             Source: Figma,
             Alternative: 'Figma'
+        },
+        {
+            Source: AfterEffects,
+            Alternative: 'After Effects'
+        },
+        {
+            Source: OutSystems,
+            Alternative: 'OutSystems'
         }
     ]
 }

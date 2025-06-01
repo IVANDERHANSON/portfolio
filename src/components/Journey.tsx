@@ -20,7 +20,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                 " key={PropIndex}>
                     <div className='w-full flex justify-between'>
                         <div>
-                            <div className="flex items-center gap-[0.3rem] font-bold text-blue-800">
+                            <div className="flex items-center gap-[0.3rem] font-bold text-blue-800 text-[1.1rem]">
                                 <h2>
                                     {Prop.Position}
                                 </h2>

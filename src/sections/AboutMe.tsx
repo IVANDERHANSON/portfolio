@@ -49,12 +49,12 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <div className="my-[2rem] flex flex-col gap-[2rem]">
                             <div className="w-full flex justify-between items-center flex-wrap">
                                 <div className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]">
-                                    <h2 className="text-blue-800 font-bold text-center">
+                                    <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                         Soft Skills
                                     </h2>
                                     <div className="h-[15rem] mt-[1rem] flex justify-center items-center flex-wrap gap-[2rem] p-[1rem]">
-                                        {AboutMeData.SoftSkills.map((SoftSkill) => (
-                                            <div className="w-[calc(50%-1rem)] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500">
+                                        {AboutMeData.SoftSkills.map((SoftSkill, SoftSkillIndex) => (
+                                            <div className="w-[calc(50%-1rem)] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500" key={SoftSkillIndex}>
                                                 <h2>
                                                     {SoftSkill}
                                                 </h2>
@@ -63,14 +63,14 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                     </div>
                                 </div>
                                 <div className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]">
-                                    <h2 className="text-blue-800 font-bold text-center">
+                                    <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                         Languages
                                     </h2>
                                     <div className="h-[15rem] mt-[1rem] flex justify-center items-center flex-wrap p-[1rem]">
-                                        {AboutMeData.Languages.map((Language) => (
-                                            <div className="w-full bg-blue-500 text-white text-center rounded-[0.5rem]">
+                                        {AboutMeData.Languages.map((Language, LanguageIndex) => (
+                                            <div className="w-full bg-blue-700 text-white text-center rounded-[0.5rem]" key={LanguageIndex}>
                                                 <div className="bg-blue-800 p-[0.25rem] rounded-t-[0.5rem]">
-                                                    <h2>
+                                                    <h2 className="font-bold">
                                                         {Language.Language}
                                                     </h2>
                                                 </div>
@@ -85,12 +85,12 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                 </div>
                             </div>
                             <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[1rem]">
-                                <h2 className="text-blue-800 font-bold text-center">
+                                <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                     Hard Skills
                                 </h2>
                                 <div className="mt-[1rem] flex items-center gap-x-[calc(15%/4)] gap-y-[2rem] flex-wrap p-[1rem]">
-                                    {AboutMeData.HardSkills.map((HardSkill) => (
-                                        <div className="w-[17%] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.5rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500 flex justify-center items-center gap-[1rem]">
+                                    {AboutMeData.HardSkills.map((HardSkill, HardSkillIndex) => (
+                                        <div className="w-[17%] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.5rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500 flex justify-center items-center gap-[1rem]" key={HardSkillIndex}>
                                             <img src={HardSkill.Source} alt={HardSkill.Alternative} className="h-[2rem]" />
                                             <h2>
                                                 {HardSkill.Alternative}
