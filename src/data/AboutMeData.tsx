@@ -1,4 +1,4 @@
-import { JourneyProps } from "../interfaces/Interfaces"
+import { JourneyProps, Language, Image } from "../interfaces/Interfaces"
 
 import BINUSLogo from '../assets/sections/AboutMe/BINUS Logo.png'
 
@@ -20,10 +20,24 @@ import BNCCActivistGatheringEvent from '../assets/sections/AboutMe/BNCC Activist
 import TechnoScape2023Certificate from '../assets/sections/AboutMe/TechnoScape 2023 Certificate.jpg'
 import BNCCOpeningSeason2023 from '../assets/sections/AboutMe/BNCC Opening Season 2023.jpg'
 
+import ReactJS from '../assets/sections/AboutMe/React JS.png'
+import TypeScript from '../assets/sections/AboutMe/TypeScript.png'
+import Laravel from '../assets/sections/AboutMe/Laravel.png'
+import NETCore from '../assets/sections/AboutMe/NET Core.png'
+import SQL from '../assets/sections/AboutMe/SQL.png'
+import CPP from '../assets/sections/AboutMe/C++.png'
+import C from '../assets/sections/AboutMe/C.png'
+import Python from '../assets/sections/AboutMe/Python.webp'
+import Java from '../assets/sections/AboutMe/Java.png'
+import Figma from '../assets/sections/AboutMe/Figma.png'
+
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
     WorkExperience: JourneyProps[];
     OrganizationExperience: JourneyProps[];
+    SoftSkills: string[];
+    Languages: Language[];
+    HardSkills: Image[];
 }
 
 export const AboutMeData: AboutMeDataStructure = {
@@ -33,6 +47,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: 'Computer Science',
             OrganizationName: 'BINUS University',
             Periode: '2022 - 2026',
+            Duration: '',
             Place: 'Jakarta',
             OrganizationImage: {
                 Source: BINUSLogo,
@@ -48,6 +63,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: '',
             OrganizationName: 'BINUS University',
             Periode: 'Sep 2024 - Jan 2025',
+            Duration: '5 Months',
             Place: 'Jakarta',
             OrganizationImage: {
                 Source: BINUSLogo,
@@ -65,6 +81,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: 'Internship',
             OrganizationName: 'PT Bank Central Asia Tbk',
             Periode: 'Feb 2025 - Aug 2025',
+            Duration: '7 Months',
             Place: 'Jakarta, Menara BCA',
             OrganizationImage: {
                 Source: BCALogo,
@@ -80,6 +97,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: 'Part-Time',
             OrganizationName: 'Bina Nusantara IT Division',
             Periode: 'Mar 2024 - Jan 2025',
+            Duration: '11 Months',
             Place: 'Jakarta, Syahdan Campus',
             OrganizationImage: {
                 Source: BinaNusantaraITDivisionLogo,
@@ -106,6 +124,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: 'Part-Time',
             OrganizationName: 'Bina Nusantara Computer Club',
             Periode: 'Oct 2023 - Sept 2024',
+            Duration: '1 Year',
             Place: 'Online, Discord',
             OrganizationImage: {
                 Source: BNCCLogo,
@@ -134,6 +153,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: '',
             OrganizationName: 'Bina Nusantara Computer Club',
             Periode: 'Oct 2023 - Oct 2024',
+            Duration: '1 Year 1 Month',
             Place: 'Jakarta',
             OrganizationImage: {
                 Source: BNCCLogo,
@@ -156,6 +176,7 @@ export const AboutMeData: AboutMeDataStructure = {
             Type: '',
             OrganizationName: 'Bina Nusantara Computer Club',
             Periode: 'Nov 2022 - Oct 2023',
+            Duration: '1 Year',
             Place: 'Jakarta',
             OrganizationImage: {
                 Source: BNCCLogo,
@@ -184,6 +205,66 @@ export const AboutMeData: AboutMeDataStructure = {
                     Alternative: 'BNCC Opening Season 2023'
                 }
             ]
+        }
+    ],
+    SoftSkills: [
+        'Leadership',
+        'Communication',
+        'Innovative',
+        'Teamwork',
+        'Time Management',
+        'Critical Thinking'
+    ],
+    Languages: [
+        {
+            Language: 'English',
+            Description: 'Professional working proficiency'
+        },
+        {
+            Language: 'Indonesian',
+            Description: 'Native or bilingual proficiency'
+        }
+    ],
+    HardSkills: [
+        {
+            Source: ReactJS,
+            Alternative: 'React.JS'
+        },
+        {
+            Source: TypeScript,
+            Alternative: 'TypeScript'
+        },
+        {
+            Source: Laravel,
+            Alternative: 'Laravel'
+        },
+        {
+            Source: NETCore,
+            Alternative: '.NET Core'
+        },
+        {
+            Source: SQL,
+            Alternative: 'SQL'
+        },
+        {
+            Source: CPP,
+            Alternative: 'C++'
+        },
+        {
+            Source: C,
+            Alternative: 'C'
+        },
+        {
+            Source: Python,
+            Alternative: 'Python'
+        },
+        {
+            Source: Java,
+            Alternative: 'Java'
+        },
+        {
+            Source: Figma,
+            Alternative: 'Figma'
         }
     ]
 }
