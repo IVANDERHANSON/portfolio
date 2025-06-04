@@ -1,10 +1,21 @@
+import { useRef } from "react";
+
+import { Image, DialogAction } from "../interfaces/Interfaces"
+
 import { AboutMeData } from "../data/AboutMeData"
 
 import Journey from "../components/Journey"
+import Dialog from "../components/Dialog";
 
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
 
 export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
+    const DialogRef = useRef<DialogAction>(null);
+    
+    const OpenDialog = (Images: Image[], Index: number) => {
+        DialogRef.current?.Open(Images, Index);
+    }
+    
     return (
         <>
             <section ref={RefProp} className="w-full bg-white flex justify-center items-center">
@@ -107,7 +118,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                             Certifications
                         </h1>
                         <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[1rem] mt-[2rem] flex justify-center items-center">
-                            <div className="group box-content w-[10%] pr-[0.2rem] pb-[0.2rem] hover:pr-0 hover:pb-0 hover:pt-[0.2rem] hover:pl-[0.2rem] cursor-pointer">
+                            <div className="group box-content w-[10%] pr-[0.2rem] pb-[0.2rem] hover:pr-0 hover:pb-0 hover:pt-[0.2rem] hover:pl-[0.2rem] cursor-pointer" onClick={() => OpenDialog(AboutMeData.Certifications, 5)}>
                                 <div className="
                                         w-full bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500
                                         group-hover:shadow-none
@@ -116,6 +127,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                 </div>
                             </div>
                         </div>
+                        <Dialog ref={DialogRef} />
                     </div>
                 </div>
             </section>

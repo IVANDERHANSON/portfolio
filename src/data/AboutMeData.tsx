@@ -43,6 +43,7 @@ interface AboutMeDataStructure {
     SoftSkills: string[];
     Languages: Language[];
     HardSkills: Image[];
+    Certifications: Image[];
 }
 
 export const AboutMeData: AboutMeDataStructure = {
@@ -291,5 +292,11 @@ export const AboutMeData: AboutMeDataStructure = {
             Source: OutSystems,
             Alternative: 'OutSystems'
         }
+    ],
+    Certifications: [
+        {
+            Source: AfterEffects,
+            Alternative: 'After Effects'
+        },
     ]
 }
