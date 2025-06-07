@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes words {
+    0%, 20% {
+        content: 'a Student';
+    }
+    21%, 40% {
+        content: 'a Programmer';
+    }
+    41%, 60% {
+        content: 'a Designer';
+    }
+    61%, 80% {
+        content: 'a Freelancer';
+    }
+    81%, 100% {
+        content: 'an Entrepreneur';
+    }
+}
+
+@keyframes cursor {
+    to {
+        border-left: 0.3rem solid #1E40AF;
+    }
+}
+
+@keyframes type {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 0.5rem);
+    }
+}
