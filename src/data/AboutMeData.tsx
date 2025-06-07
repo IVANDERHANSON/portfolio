@@ -36,6 +36,24 @@ import Figma from '../assets/sections/AboutMe/Figma.png'
 import AfterEffects from '../assets/sections/AboutMe/After Effects.webp'
 import OutSystems from '../assets/sections/AboutMe/OutSystems.png'
 
+import TrainingTeknisOutSystems from '../assets/sections/AboutMe/Training Teknis OutSystems.png'
+import BasicConceptofProjectManagement from '../assets/sections/AboutMe/Basic Concept of Project Management.jpg'
+import FrontEndDevelopment from '../assets/sections/AboutMe/Front-End Development.png'
+import BackEndDevelopment from '../assets/sections/AboutMe/Back-End Development.png'
+import BackEndTutoratTPM from '../assets/sections/AboutMe/Back-End Tutor at TPM.png'
+import MicrosoftAIOverview from '../assets/sections/AboutMe/Microsoft AI Overview.png'
+import MicrosoftComputerVision from '../assets/sections/AboutMe/Microsoft Computer Vision.png'
+import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/AboutMe/Microsoft Document Intelligence and Knowledge Mining.png'
+import MicrosoftGenerativeAI from '../assets/sections/AboutMe/Microsoft Generative AI.png'
+import MicrosoftNaturalLanguageProcessing from '../assets/sections/AboutMe/Microsoft Natural Language Processing.png'
+import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
+import IntroductiontoCSS from '../assets/sections/AboutMe/Introduction to CSS.jpg'
+import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
+import JavaScriptIntermediate from '../assets/sections/AboutMe/JavaScript Intermediate.jpg'
+import PHP from '../assets/sections/AboutMe/PHP.jpg'
+import CIntermediate from '../assets/sections/AboutMe/C Intermediate.jpg'
+import IntroductiontoHTML from '../assets/sections/AboutMe/Introduction to HTML.jpg'
+
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
     WorkExperience: JourneyProps[];
@@ -295,8 +313,92 @@ export const AboutMeData: AboutMeDataStructure = {
     ],
     Certifications: [
         {
-            Source: AfterEffects,
-            Alternative: 'After Effects'
+            Source: TrainingTeknisOutSystems,
+            Alternative: 'Training Teknis OutSystems'
         },
+        {
+            Source: ITDivisionCertificate,
+            Alternative: 'IT Division'
+        },
+        {
+            Source: BasicConceptofProjectManagement,
+            Alternative: 'Basic Concept of Project Management'
+        },
+        {
+            Source: FrontEndDevelopment,
+            Alternative: 'Front-End Development'
+        },
+        {
+            Source: BackEndDevelopment,
+            Alternative: 'Back-End Development'
+        },
+        {
+            Source: BackEndTutoratTPM,
+            Alternative: 'Back-End Tutor at TPM'
+        },
+        {
+            Source: BackEndDevelopmentTutorCertificate,
+            Alternative: 'Back-End Development Tutor'
+        },
+        {
+            Source: BNCCActivistCertificate,
+            Alternative: 'BNCC Activist'
+        },
+        {
+            Source: TPMCertificate,
+            Alternative: 'TPM'
+        },
+        {
+            Source: TechnoScape2023Certificate,
+            Alternative: 'TechnoScape 2023'
+        },
+        {
+            Source: MicrosoftAIOverview,
+            Alternative: 'Microsoft Azure AI Fundamentals - AI Overview'
+        },
+        {
+            Source: MicrosoftComputerVision,
+            Alternative: 'Microsoft Azure AI Fundamentals - Computer Vision'
+        },
+        {
+            Source: MicrosoftDocumentIntelligenceandKnowledgeMining,
+            Alternative: 'Microsoft Azure AI Fundamentals - Document Intelligence and Knowledge Mining'
+        },
+        {
+            Source: MicrosoftGenerativeAI,
+            Alternative: 'Microsoft Azure AI Fundamentals - Generative AI'
+        },
+        {
+            Source: MicrosoftNaturalLanguageProcessing,
+            Alternative: 'Microsoft Azure AI Fundamentals - Natural Language Processing'
+        },
+        {
+            Source: IntroductiontoCSharp,
+            Alternative: 'Introduction to C#'
+        },
+        {
+            Source: IntroductiontoCSS,
+            Alternative: 'Introduction to CSS'
+        },
+        {
+            Source: IntroductiontoPython,
+            Alternative: 'Introduction to Python'
+        },
+        {
+            Source: JavaScriptIntermediate,
+            Alternative: 'JavaScript Intermediate'
+        },
+        {
+            Source: PHP,
+            Alternative: 'PHP'
+        },
+        {
+            Source: CIntermediate,
+            Alternative: 'C Intermediate'
+        },
+        {
+            Source: IntroductiontoHTML,
+            Alternative: 'Introduction to HTML'
+        }
     ]
 }

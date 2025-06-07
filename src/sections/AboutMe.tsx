@@ -117,13 +117,23 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Certifications
                         </h1>
-                        <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[1rem] mt-[2rem] flex justify-center items-center">
+                        <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col">
+                            <div className="mb-[2rem] w-full flex justify-between">
+                                {AboutMeData.Certifications.slice(0, 5).map((Certification, CertificationIndex) => (
+                                    <div className="w-[17%] flex justify-start items-center flex-col" key={CertificationIndex}>
+                                        <img src={Certification.Source} alt={Certification.Alternative} className="h-[8rem] rounded-[0.5rem] cursor-pointer transition-all duration-300 hover:scale-[105%]" title="View Certificate" onClick={() => OpenDialog(AboutMeData.Certifications, CertificationIndex)} />
+                                        <p className="mt-[0.5rem] px-[0.5rem] text-center">
+                                            {Certification.Alternative}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
                             <div className="group box-content w-[10%] pr-[0.2rem] pb-[0.2rem] hover:pr-0 hover:pb-0 hover:pt-[0.2rem] hover:pl-[0.2rem] cursor-pointer" onClick={() => OpenDialog(AboutMeData.Certifications, 5)}>
                                 <div className="
                                         w-full bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500
                                         group-hover:shadow-none
                                 ">
-                                    See More
+                                    View More
                                 </div>
                             </div>
                         </div>
