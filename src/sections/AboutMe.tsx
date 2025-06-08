@@ -24,12 +24,14 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             About Me
                         </h1>
-                        <p className="my-[2rem] text-justify">
-                            Hello 👋 my name is Ivander Hanson Setyawan, you can called me Hanson.
-                            <br />
-                            <br />
-                            I am currently in the sixth semester of Computer Science undergraduate program at BINUS University. I am an innovative and disciplined person who loves technology and its applications. I filled my free time by being active in Bina Nusantara Computer Club and working part-time in Bina Nusantara IT Division to develop my skills and expand my connections.
-                        </p>
+                        <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] my-[2rem]">
+                            <p className="text-justify">
+                                Hello 👋 my name is Ivander Hanson Setyawan, you can called me Hanson.
+                                <br />
+                                <br />
+                                I am currently in the sixth semester of Computer Science undergraduate program at BINUS University. I am an innovative and disciplined person who loves technology and its applications. I filled my free time by being active in Bina Nusantara Computer Club and working part-time in Bina Nusantara IT Division to develop my skills and expand my connections.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="w-full">
