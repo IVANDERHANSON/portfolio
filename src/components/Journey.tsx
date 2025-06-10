@@ -3,6 +3,7 @@ import { useRef } from "react"
 import { JourneyProps, Image, DialogAction } from "../interfaces/Interfaces"
 
 import Dialog from "./Dialog";
+import FadeUpAnimation from "./FadeUpAnimation";
 
 export default function Journey({ Props }: { Props: JourneyProps[] }) {
     const DialogRef = useRef<DialogAction>(null);
@@ -14,10 +15,10 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
     return (
         <>
             <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.2rem] border-solid border-blue-800 border-opacity-[0.1]">
-                {Props.map((Prop, PropIndex) => (<div className="
+                {Props.map((Prop, PropIndex) => (<FadeUpAnimation key={PropIndex}><div className="
                     relative w-full p-[2rem] bg-blue-800 bg-opacity-[0.1]
                     before:content-[''] before:absolute before:top-[-0.03rem] before:right-[calc(100%+2rem-0.6rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white/80
-                " key={PropIndex}>
+                ">
                     <div className='w-full flex justify-between'>
                         <div>
                             <div className="flex items-center gap-[0.3rem] font-bold text-blue-800 text-[1.1rem]">
@@ -70,7 +71,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                             </div>
                         ))}
                     </div>)}
-                </div>))}
+                </div></FadeUpAnimation>))}
             </div>
 
             <Dialog ref={DialogRef} />
