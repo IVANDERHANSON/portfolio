@@ -15,7 +15,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
         <>
             <div className="w-[calc(100%-0.6rem)] ml-[0.6rem] flex flex-col gap-[2rem] my-[2rem] pl-[2rem] border-l-[0.2rem] border-solid border-blue-800 border-opacity-[0.1]">
                 {Props.map((Prop, PropIndex) => (<div className="
-                    relative w-full p-[1rem] bg-blue-800 bg-opacity-[0.1]
+                    relative w-full p-[2rem] bg-blue-800 bg-opacity-[0.1]
                     before:content-[''] before:absolute before:top-[-0.03rem] before:right-[calc(100%+2rem-0.6rem)] before:bg-blue-800 before:w-[1.4rem] before:h-[1.4rem] before:rounded-[50%] before:border-[0.16rem] before:border-solid before:border-white/80
                 " key={PropIndex}>
                     <div className='w-full flex justify-between'>
@@ -66,7 +66,7 @@ export default function Journey({ Props }: { Props: JourneyProps[] }) {
                     {Prop.Images.length !== 0 && (<div className='flex justify-start items-center flex-wrap gap-[1rem] mt-[1rem]'>
                         {Prop.Images.map((Image, ImageIndex) => (
                             <div className='flex justify-center items-center w-[8rem] h-[4rem] rounded-[0.5rem] overflow-hidden bg-black cursor-pointer transition-all duration-300 hover:scale-[105%]' key={ImageIndex}>
-                                <img src={Image.Source} alt={Image.Alternative} onClick={() => OpenDialog(Prop.Images, ImageIndex)} />
+                                <img src={Image.Source} alt={Image.Alternative} onClick={() => OpenDialog(Prop.Images, ImageIndex)} title="View Image" />
                             </div>
                         ))}
                     </div>)}

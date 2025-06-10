@@ -45,15 +45,23 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
                         className="h-[40rem]"
                     />
 
-                    <p
-                        className="text-white p-2 bg-black/80 text-center"
-                    >
-                        {CurrentImageIndex + 1}. {CurrentImages[CurrentImageIndex]?.Alternative}
-                    </p>
+                    <div className="flex justify-center items-center gap-4">
+                        <p
+                            className="text-white p-2 bg-black/80 text-center"
+                        >
+                            {CurrentImageIndex + 1} of {CurrentImages.length}
+                        </p>
+                        <p
+                            className="text-white p-2 bg-black/80 text-center"
+                        >
+                            {CurrentImages[CurrentImageIndex]?.Alternative}
+                        </p>
+                    </div>
 
                     <button
                         onClick={CloseDialog}
                         className="absolute top-4 right-4 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
+                        title="Close"
                     >
                         x
                     </button>
@@ -61,6 +69,7 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
                     <button
                         onClick={PrevImage}
                         className="absolute left-4 top-1/2 -translate-y-1/2 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
+                        title="Back"
                     >
                         &lt;
                     </button>
@@ -68,6 +77,7 @@ const Dialog = forwardRef<DialogAction>((_, ref) => {
                     <button
                         onClick={NextImage}
                         className="absolute right-4 top-1/2 -translate-y-1/2 text-white w-[2.5rem] h-[2.5rem] bg-black/50 rounded-[50%] hover:bg-black/80"
+                        title="Next"
                     >
                         &gt;
                     </button>

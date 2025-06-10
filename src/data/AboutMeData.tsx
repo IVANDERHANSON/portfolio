@@ -36,6 +36,24 @@ import Figma from '../assets/sections/AboutMe/Figma.png'
 import AfterEffects from '../assets/sections/AboutMe/After Effects.webp'
 import OutSystems from '../assets/sections/AboutMe/OutSystems.png'
 
+import TrainingTeknisOutSystems from '../assets/sections/AboutMe/Training Teknis OutSystems.png'
+import BasicConceptofProjectManagement from '../assets/sections/AboutMe/Basic Concept of Project Management.jpg'
+import FrontEndDevelopment from '../assets/sections/AboutMe/Front-End Development.png'
+import BackEndDevelopment from '../assets/sections/AboutMe/Back-End Development.png'
+import BackEndTutoratTPM from '../assets/sections/AboutMe/Back-End Tutor at TPM.png'
+import MicrosoftAIOverview from '../assets/sections/AboutMe/Microsoft AI Overview.png'
+import MicrosoftComputerVision from '../assets/sections/AboutMe/Microsoft Computer Vision.png'
+import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/AboutMe/Microsoft Document Intelligence and Knowledge Mining.png'
+import MicrosoftGenerativeAI from '../assets/sections/AboutMe/Microsoft Generative AI.png'
+import MicrosoftNaturalLanguageProcessing from '../assets/sections/AboutMe/Microsoft Natural Language Processing.png'
+import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
+import IntroductiontoCSS from '../assets/sections/AboutMe/Introduction to CSS.jpg'
+import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
+import JavaScriptIntermediate from '../assets/sections/AboutMe/JavaScript Intermediate.jpg'
+import PHP from '../assets/sections/AboutMe/PHP.jpg'
+import CIntermediate from '../assets/sections/AboutMe/C Intermediate.jpg'
+import IntroductiontoHTML from '../assets/sections/AboutMe/Introduction to HTML.jpg'
+
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
     WorkExperience: JourneyProps[];
@@ -59,7 +77,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BINUSLogo,
                 Alternative: 'BINUS Logo'
             },
-            Description: 'Streaming: Software Engineering\nElective Course: Mobile Programming',
+            Description: '• Streaming: Software Engineering\n• Elective Course: Mobile Programming',
             Images: [
                 
             ]
@@ -109,7 +127,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BinaNusantaraITDivisionLogo,
                 Alternative: 'Bina Nusantara IT Division Logo'
             },
-            Description: '1. Developed web applications to maintain Customer Relationships.\n2. Developed BINUS Chatbot (CODY).\n3. Conducted testing to ensure that the software created met UI/UX requirements.\n4. Contributed to the Proof of Concept for a Generative AI Chatbot.\n5. Migrated a project from Salesforce Classic to Lightning Experience.\n6. Developed REST API in Salesforce.',
+            Description: '• Developed web applications to maintain Customer Relationships.\n• Developed BINUS Chatbot (CODY).\n• Conducted testing to ensure that the software created met UI/UX requirements.\n• Contributed to the Proof of Concept for a Generative AI Chatbot.\n• Migrated a project from Salesforce Classic to Lightning Experience.\n• Developed REST API in Salesforce.',
             Images: [
                 {
                     Source: ITDivisionCertificate,
@@ -136,7 +154,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: '1. Taught and prepared materials (Laravel framework) for 13 sessions.\n2. Ensured class members could understand the material.\n3. Assessed Mid Projects and Final Projects.',
+            Description: '• Taught and prepared materials (Laravel framework) for 13 sessions.\n• Ensured class members could understand the material.\n• Assessed Mid Projects and Final Projects.',
             Images: [
                 {
                     Source: BackEndDevelopmentTutorCertificate,
@@ -165,7 +183,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: '1. Led Learning Management System development project for members.\n2. Led Design System development project for BNCC.\n3. Led RnD team weekly stand-up meetings regularly.\n4. Migrated old server to new server.\n5. Maintained new server, databases, and websites.\n6. Conducted relevant technology research to improve BNCC operational activities.\n7. Handled Knowledge Management Programs to prepare Activists to become the next RnD.\n8. Conducted documentation for all RnD programs.\n9. Led TechnoScape 2024 website project.',
+            Description: '• Led Learning Management System development project for members.\n• Led Design System development project for BNCC.\n• Led RnD team weekly stand-up meetings regularly.\n• Migrated old server to new server.\n• Maintained new server, databases, and websites.\n• Conducted relevant technology research to improve BNCC operational activities.\n• Handled Knowledge Management Programs to prepare Activists to become the next RnD.\n• Conducted documentation for all RnD programs.\n• Led TechnoScape 2024 website project.',
             Images: [
                 {
                     Source: RnD,
@@ -188,7 +206,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BNCCLogo,
                 Alternative: 'BNCC Logo'
             },
-            Description: '1. Project Manager and Back-End Developer at TPM.\n2. Activist Gathering Event Committee.\n3. Publication Staff at TechnoScape 2023.\n4. Design Coordinator at BNCC Workshop 2023.\n5. Design Staff at BNCC Opening Season 2023.\n6. Design Staff at BNCC Corporate Social Responsibility 2023.\n7. Completed Technical Training (Web Development, Server, & Design System).\n8. Completed Leadership Development Program.',
+            Description: '• Project Manager and Back-End Developer at TPM.\n• Activist Gathering Event Committee.\n• Publication Staff at TechnoScape 2023.\n• Design Coordinator at BNCC Workshop 2023.\n• Design Staff at BNCC Opening Season 2023.\n• Design Staff at BNCC Corporate Social Responsibility 2023.\n• Completed Technical Training (Web Development, Server, & Design System).\n• Completed Leadership Development Program.',
             Images: [
                 {
                     Source: BNCCActivistCertificate,
@@ -295,8 +313,92 @@ export const AboutMeData: AboutMeDataStructure = {
     ],
     Certifications: [
         {
-            Source: AfterEffects,
-            Alternative: 'After Effects'
+            Source: TrainingTeknisOutSystems,
+            Alternative: 'Training Teknis OutSystems'
         },
+        {
+            Source: ITDivisionCertificate,
+            Alternative: 'IT Division'
+        },
+        {
+            Source: BasicConceptofProjectManagement,
+            Alternative: 'Basic Concept of Project Management'
+        },
+        {
+            Source: FrontEndDevelopment,
+            Alternative: 'Front-End Development'
+        },
+        {
+            Source: BackEndDevelopment,
+            Alternative: 'Back-End Development'
+        },
+        {
+            Source: BackEndTutoratTPM,
+            Alternative: 'Back-End Tutor at TPM'
+        },
+        {
+            Source: BackEndDevelopmentTutorCertificate,
+            Alternative: 'Back-End Development Tutor'
+        },
+        {
+            Source: BNCCActivistCertificate,
+            Alternative: 'BNCC Activist'
+        },
+        {
+            Source: TPMCertificate,
+            Alternative: 'TPM'
+        },
+        {
+            Source: TechnoScape2023Certificate,
+            Alternative: 'TechnoScape 2023'
+        },
+        {
+            Source: MicrosoftAIOverview,
+            Alternative: 'Microsoft Azure AI Fundamentals - AI Overview'
+        },
+        {
+            Source: MicrosoftComputerVision,
+            Alternative: 'Microsoft Azure AI Fundamentals - Computer Vision'
+        },
+        {
+            Source: MicrosoftDocumentIntelligenceandKnowledgeMining,
+            Alternative: 'Microsoft Azure AI Fundamentals - Document Intelligence and Knowledge Mining'
+        },
+        {
+            Source: MicrosoftGenerativeAI,
+            Alternative: 'Microsoft Azure AI Fundamentals - Generative AI'
+        },
+        {
+            Source: MicrosoftNaturalLanguageProcessing,
+            Alternative: 'Microsoft Azure AI Fundamentals - Natural Language Processing'
+        },
+        {
+            Source: IntroductiontoCSharp,
+            Alternative: 'Introduction to C#'
+        },
+        {
+            Source: IntroductiontoCSS,
+            Alternative: 'Introduction to CSS'
+        },
+        {
+            Source: IntroductiontoPython,
+            Alternative: 'Introduction to Python'
+        },
+        {
+            Source: JavaScriptIntermediate,
+            Alternative: 'JavaScript Intermediate'
+        },
+        {
+            Source: PHP,
+            Alternative: 'PHP'
+        },
+        {
+            Source: CIntermediate,
+            Alternative: 'C Intermediate'
+        },
+        {
+            Source: IntroductiontoHTML,
+            Alternative: 'Introduction to HTML'
+        }
     ]
 }
