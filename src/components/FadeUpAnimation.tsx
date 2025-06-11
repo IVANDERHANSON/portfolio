@@ -3,52 +3,52 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useRef, useState } from "react";
 
 export default function FadeUpAnimation({ children }: { children: React.ReactNode }) {
-    const controls = useAnimation();
-    const [ref, inView] = useInView({
+    const Animate = useAnimation();
+    const [Ref, InView] = useInView({
         threshold: 0.25,
         triggerOnce: false,
     });
 
-    const elementRef = useRef<HTMLDivElement>(null);
-    const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
+    const ElementRef = useRef<HTMLDivElement>(null);
+    const [ScrollDirection, SetScrollDirection] = useState<"up" | "down" | null>(null);
 
     useEffect(() => {
-        let lastScrollY = window.scrollY;
+        let LastScrollY = window.scrollY;
 
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            setScrollDirection(currentScrollY > lastScrollY ? "down" : "up");
-            lastScrollY = currentScrollY;
+        const HandleScroll = () => {
+            const CurrentScrollY = window.scrollY;
+            SetScrollDirection(CurrentScrollY > LastScrollY ? "down" : "up");
+            LastScrollY = CurrentScrollY;
         };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", HandleScroll);
+        return () => window.removeEventListener("scroll", HandleScroll);
     }, []);
 
     useEffect(() => {
-        if (inView && scrollDirection === "down") {
-            controls.start("visible");
-        } else if (!inView && scrollDirection === "up") {
-            const el = elementRef.current;
-            if (el) {
-                const rect = el.getBoundingClientRect();
-                const isBelowViewport = rect.bottom > window.innerHeight;
-                if (isBelowViewport) {
-                    controls.start("hidden");
+        if (InView && ScrollDirection === "down") {
+            Animate.start("visible");
+        } else if (!InView && ScrollDirection === "up") {
+            const IsElementExists = ElementRef.current;
+            if (IsElementExists) {
+                const Rect = IsElementExists.getBoundingClientRect();
+                const IsBelowViewport = Rect.bottom > window.innerHeight;
+                if (IsBelowViewport) {
+                    Animate.start("hidden");
                 }
             }
         }
-    }, [inView, scrollDirection, controls]);
+    }, [InView, ScrollDirection, Animate]);
 
     return (
         <motion.div
-            ref={(node) => {
-                ref(node);
-                elementRef.current = node;
+            ref={(Node) => {
+                Ref(Node);
+                ElementRef.current = Node;
             }}
             initial="hidden"
-            animate={controls}
-            transition={{ duration: 0.6 }}
+            animate={Animate}
+            transition={{ duration: 0.5 }}
             variants={{
                 hidden: { opacity: 0, y: 40 },
                 visible: { opacity: 1, y: 0 },
