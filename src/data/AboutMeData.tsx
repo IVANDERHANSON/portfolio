@@ -46,6 +46,7 @@ import MicrosoftComputerVision from '../assets/sections/AboutMe/Microsoft Comput
 import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/AboutMe/Microsoft Document Intelligence and Knowledge Mining.png'
 import MicrosoftGenerativeAI from '../assets/sections/AboutMe/Microsoft Generative AI.png'
 import MicrosoftNaturalLanguageProcessing from '../assets/sections/AboutMe/Microsoft Natural Language Processing.png'
+import AdvancedSQL from '../assets/sections/AboutMe/SQL (Advanced).png'
 import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
 import IntroductiontoCSS from '../assets/sections/AboutMe/Introduction to CSS.jpg'
 import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
@@ -371,6 +372,10 @@ export const AboutMeData: AboutMeDataStructure = {
         {
             Source: MicrosoftNaturalLanguageProcessing,
             Alternative: 'Microsoft Azure AI Fundamentals - Natural Language Processing'
+        },
+        {
+            Source: AdvancedSQL,
+            Alternative: 'SQL (Advanced)'
         },
         {
             Source: IntroductiontoCSharp,
