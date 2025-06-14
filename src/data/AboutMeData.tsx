@@ -94,7 +94,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BINUSLogo,
                 Alternative: 'BINUS Logo'
             },
-            Description: 'Here I got the opportunity from the Student Advisory and Support Center (SASC) to become a scholarship mentor during the fifth semester. As a mentor, I helped mentees who still had difficulty in achieving the academic achievement standards set by BINUS University. By helping mentees, I could also improve soft skills, increase academic knowledge, and get a tuition scholarship of 16 credits.',
+            Description: 'I got the opportunity from the Student Advisory and Support Center (SASC) to become a scholarship mentor during the fifth semester. As a mentor, I helped mentees who still had difficulty in achieving the academic achievement standards set by BINUS University. By helping mentees, I could also improve soft skills, increase academic knowledge, and get a tuition scholarship of 16 credits.',
             Images: [
                 
             ]

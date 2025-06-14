@@ -124,7 +124,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                             Certifications
                         </h1>
                         
-                        <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col" Direction="up">
+                        <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col" Direction="right">
                             <div className="mb-[2rem] w-full flex justify-between">
                                 {AboutMeData.Certifications.slice(0, 5).map((Certification, CertificationIndex) => (
                                     <div className="w-[17%] flex justify-start items-center flex-col" key={CertificationIndex}>
