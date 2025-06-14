@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef, useState } from "react";
 
-export default function FadeAnimation({ children, Direction }: { children: React.ReactNode, Direction: "up" | "right" | "down" | "left" }) {
+export default function FadeAnimation({ className, Direction, children }: { className?: string, Direction: "up" | "right" | "down" | "left", children: React.ReactNode }) {
     const Animate = useAnimation();
     const [Ref, InView] = useInView({
         threshold: 0.25,
@@ -49,6 +49,7 @@ export default function FadeAnimation({ children, Direction }: { children: React
             initial="hidden"
             animate={Animate}
             transition={{ duration: 0.5 }}
+            className={className}
             variants={{
                 hidden: {
                     opacity: 0,
