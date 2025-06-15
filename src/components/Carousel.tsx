@@ -175,7 +175,7 @@ export default function Carousel() {
 
                 <div
                     ref={thumbContainerRef}
-                    className="flex overflow-hidden gap-4 flex-1 px-1 cursor-grab"
+                    className="flex overflow-x-auto gap-4 flex-1 px-1 scrollbar-none cursor-grab"
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                     onMouseDown={handleMouseDown}

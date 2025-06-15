@@ -34,3 +34,11 @@
         width: calc(100% + 0.5rem);
     }
 }
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
