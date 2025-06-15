@@ -148,7 +148,7 @@ export default function Carousel() {
     };
 
     return (
-        <div className="w-full max-w-5xl mx-auto p-4 space-y-4 select-none">
+        <div className="w-full max-w-5xl mx-auto p-4 space-y-4">
             <div className="flex flex-col md:flex-row gap-6 items-center">
                 <div className="md:w-1/3 text-left bg-gray-100 p-4 rounded-xl shadow">
                     <h2 className="text-2xl font-bold">{slides[current].Alternative}</h2>
@@ -175,7 +175,7 @@ export default function Carousel() {
 
                 <div
                     ref={thumbContainerRef}
-                    className="flex overflow-x-auto gap-4 flex-1 px-1 scrollbar-hide cursor-grab"
+                    className="flex overflow-hidden gap-4 flex-1 px-1 cursor-grab"
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                     onMouseDown={handleMouseDown}
@@ -192,13 +192,13 @@ export default function Carousel() {
                                 }) as React.RefCallback<HTMLButtonElement>
                             }
                             onClick={() => goToSlide(index)}
-                            className={`flex-shrink-0 border-2 rounded-lg transition-transform hover:scale-105 ${current === index ? "border-blue-500" : "border-transparent"
+                            className={`flex-shrink-0 border-2 rounded-lg transition-transform hover:scale-105 hover:border-transparent ${current === index ? "border-blue-500" : "border-transparent"
                                 }`}
                         >
                             <img
                                 src={slide.Source}
                                 alt={`Thumbnail ${index + 1}`}
-                                className="w-28 h-16 object-cover rounded-md"
+                                className="w-28 h-16 object-cover rounded-md select-none"
                                 title="View Project"
                                 draggable={false}
                             />
