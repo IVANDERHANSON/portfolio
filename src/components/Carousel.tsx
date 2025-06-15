@@ -80,7 +80,6 @@ export default function Carousel() {
     const dragStartX = useRef(0);
     const scrollStartX = useRef(0);
 
-    // Auto play every 1s
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev + 1) % slides.length);
@@ -88,7 +87,6 @@ export default function Carousel() {
         return () => clearInterval(interval);
     }, []);
 
-    // Scroll thumbnail into view on change
     useEffect(() => {
         const container = thumbContainerRef.current;
         const currentThumb = thumbRefs.current[current];
@@ -115,7 +113,6 @@ export default function Carousel() {
     const nextSlide = () => goToSlide((current + 1) % slides.length);
     const prevSlide = () => goToSlide((current - 1 + slides.length) % slides.length);
 
-    // Mobile swipe
     const handleTouchStart = (e: React.TouchEvent) => {
         touchStartX.current = e.touches[0].clientX;
     };
@@ -134,7 +131,6 @@ export default function Carousel() {
         touchStartX.current = null;
     };
 
-    // Desktop drag-to-scroll
     const handleMouseDown = (e: React.MouseEvent) => {
         isDragging.current = true;
         dragStartX.current = e.clientX;
@@ -153,7 +149,6 @@ export default function Carousel() {
 
     return (
         <div className="w-full max-w-5xl mx-auto p-4 space-y-4 select-none">
-            {/* Image & Description */}
             <div className="flex flex-col md:flex-row gap-6 items-center">
                 <div className="md:w-1/3 text-left bg-gray-100 p-4 rounded-xl shadow">
                     <h2 className="text-2xl font-bold">{slides[current].Alternative}</h2>
@@ -169,17 +164,15 @@ export default function Carousel() {
                 </div>
             </div>
 
-            {/* Thumbnails + Arrows */}
             <div className="flex items-center justify-between gap-4">
-                {/* Prev Button */}
                 <button
                     onClick={prevSlide}
                     className="p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                    title="Previous"
                 >
                     &lt;
                 </button>
 
-                {/* Thumbnail Scrollable Area */}
                 <div
                     ref={thumbContainerRef}
                     className="flex overflow-x-auto gap-4 flex-1 px-1 scrollbar-hide cursor-grab"
@@ -199,12 +192,6 @@ export default function Carousel() {
                                 }) as React.RefCallback<HTMLButtonElement>
                             }
                             onClick={() => goToSlide(index)}
-                            onTouchStart={handleTouchStart}
-                            onTouchEnd={handleTouchEnd}
-                            onMouseDown={handleMouseDown}
-                            onMouseMove={handleMouseMove}
-                            onMouseUp={handleMouseUp}
-                            onMouseLeave={handleMouseUp}
                             className={`flex-shrink-0 border-2 rounded-lg transition-transform hover:scale-105 ${current === index ? "border-blue-500" : "border-transparent"
                                 }`}
                         >
@@ -212,15 +199,17 @@ export default function Carousel() {
                                 src={slide.Source}
                                 alt={`Thumbnail ${index + 1}`}
                                 className="w-28 h-16 object-cover rounded-md"
+                                title="View Project"
+                                draggable={false}
                             />
                         </button>
                     ))}
                 </div>
 
-                {/* Next Button */}
                 <button
                     onClick={nextSlide}
                     className="p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                    title="Next"
                 >
                     &gt;
                 </button>
