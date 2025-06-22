@@ -46,13 +46,14 @@ import MicrosoftComputerVision from '../assets/sections/AboutMe/Microsoft Comput
 import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/AboutMe/Microsoft Document Intelligence and Knowledge Mining.png'
 import MicrosoftGenerativeAI from '../assets/sections/AboutMe/Microsoft Generative AI.png'
 import MicrosoftNaturalLanguageProcessing from '../assets/sections/AboutMe/Microsoft Natural Language Processing.png'
-import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
+import AdvancedSQL from '../assets/sections/AboutMe/SQL (Advanced).png'
+import IntroductiontoHTML from '../assets/sections/AboutMe/Introduction to HTML.jpg'
 import IntroductiontoCSS from '../assets/sections/AboutMe/Introduction to CSS.jpg'
-import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
 import JavaScriptIntermediate from '../assets/sections/AboutMe/JavaScript Intermediate.jpg'
 import PHP from '../assets/sections/AboutMe/PHP.jpg'
+import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
+import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
 import CIntermediate from '../assets/sections/AboutMe/C Intermediate.jpg'
-import IntroductiontoHTML from '../assets/sections/AboutMe/Introduction to HTML.jpg'
 
 interface AboutMeDataStructure {
     EducationAndScholarship: JourneyProps[];
@@ -93,7 +94,7 @@ export const AboutMeData: AboutMeDataStructure = {
                 Source: BINUSLogo,
                 Alternative: 'BINUS Logo'
             },
-            Description: 'Here I got the opportunity from the Student Advisory and Support Center (SASC) to become a scholarship mentor during the fifth semester. As a mentor, I helped mentees who still had difficulty in achieving the academic achievement standards set by BINUS University. By helping mentees, I could also improve soft skills, increase academic knowledge, and get a tuition scholarship of 16 credits.',
+            Description: 'I got the opportunity from the Student Advisory and Support Center (SASC) to become a scholarship mentor during the fifth semester. As a mentor, I helped mentees who still had difficulty in achieving the academic achievement standards set by BINUS University. By helping mentees, I could also improve soft skills, increase academic knowledge, and get a tuition scholarship of 16 credits.',
             Images: [
                 
             ]
@@ -341,16 +342,16 @@ export const AboutMeData: AboutMeDataStructure = {
             Alternative: 'Back-End Development Tutor'
         },
         {
-            Source: BNCCActivistCertificate,
-            Alternative: 'BNCC Activist'
+            Source: TechnoScape2023Certificate,
+            Alternative: 'TechnoScape 2023'
         },
         {
             Source: TPMCertificate,
             Alternative: 'TPM'
         },
         {
-            Source: TechnoScape2023Certificate,
-            Alternative: 'TechnoScape 2023'
+            Source: BNCCActivistCertificate,
+            Alternative: 'BNCC Activist'
         },
         {
             Source: MicrosoftAIOverview,
@@ -373,16 +374,16 @@ export const AboutMeData: AboutMeDataStructure = {
             Alternative: 'Microsoft Azure AI Fundamentals - Natural Language Processing'
         },
         {
-            Source: IntroductiontoCSharp,
-            Alternative: 'Introduction to C#'
+            Source: AdvancedSQL,
+            Alternative: 'SQL (Advanced)'
+        },
+        {
+            Source: IntroductiontoHTML,
+            Alternative: 'Introduction to HTML'
         },
         {
             Source: IntroductiontoCSS,
             Alternative: 'Introduction to CSS'
-        },
-        {
-            Source: IntroductiontoPython,
-            Alternative: 'Introduction to Python'
         },
         {
             Source: JavaScriptIntermediate,
@@ -393,12 +394,16 @@ export const AboutMeData: AboutMeDataStructure = {
             Alternative: 'PHP'
         },
         {
+            Source: IntroductiontoCSharp,
+            Alternative: 'Introduction to C#'
+        },
+        {
+            Source: IntroductiontoPython,
+            Alternative: 'Introduction to Python'
+        },
+        {
             Source: CIntermediate,
             Alternative: 'C Intermediate'
         },
-        {
-            Source: IntroductiontoHTML,
-            Alternative: 'Introduction to HTML'
-        }
     ]
 }

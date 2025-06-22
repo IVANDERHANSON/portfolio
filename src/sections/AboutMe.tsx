@@ -6,6 +6,7 @@ import { AboutMeData } from "../data/AboutMeData"
 
 import Journey from "../components/Journey"
 import Dialog from "../components/Dialog";
+import FadeAnimation from "../components/FadeAnimation";
 
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
 
@@ -24,14 +25,15 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             About Me
                         </h1>
-                        <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] my-[2rem]">
+                        
+                        <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] my-[2rem]" Direction="right">
                             <p className="text-justify">
                                 Hello 👋 my name is Ivander Hanson Setyawan, you can called me Hanson.
                                 <br />
                                 <br />
                                 I am currently in the sixth semester of Computer Science undergraduate program at BINUS University. I am an innovative and disciplined person who loves technology and its applications. I filled my free time by being active in Bina Nusantara Computer Club and working part-time in Bina Nusantara IT Division to develop my skills and expand my connections.
                             </p>
-                        </div>
+                        </FadeAnimation>
                     </div>
 
                     <div className="w-full">
@@ -61,7 +63,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         </h1>
                         <div className="my-[2rem] flex flex-col gap-[2rem]">
                             <div className="w-full flex justify-between items-center flex-wrap">
-                                <div className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]">
+                                <FadeAnimation className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]" Direction="right">
                                     <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                         Soft Skills
                                     </h2>
@@ -74,8 +76,9 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                             </div>
                                         ))}
                                     </div>
-                                </div>
-                                <div className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]">
+                                </FadeAnimation>
+
+                                <FadeAnimation className="w-[calc(50%-1rem)] h-[20rem] bg-blue-800 bg-opacity-[0.1] p-[1rem]" Direction="left">
                                     <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                         Languages
                                     </h2>
@@ -95,9 +98,10 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                             </div>
                                         ))}
                                     </div>
-                                </div>
+                                </FadeAnimation>
                             </div>
-                            <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[1rem]">
+                            
+                            <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[1rem]" Direction="up">
                                 <h2 className="text-blue-800 font-bold text-center text-[1.5rem]">
                                     Hard Skills
                                 </h2>
@@ -111,7 +115,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </FadeAnimation>
                         </div>
                     </div>
 
@@ -119,7 +123,8 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Certifications
                         </h1>
-                        <div className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col">
+                        
+                        <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col" Direction="right">
                             <div className="mb-[2rem] w-full flex justify-between">
                                 {AboutMeData.Certifications.slice(0, 5).map((Certification, CertificationIndex) => (
                                     <div className="w-[17%] flex justify-start items-center flex-col" key={CertificationIndex}>
@@ -138,7 +143,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                     View More
                                 </div>
                             </div>
-                        </div>
+                        </FadeAnimation>
                         <Dialog ref={DialogRef} />
                     </div>
                 </div>
