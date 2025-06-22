@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 import { Image, DialogAction } from "../interfaces/Interfaces"
 
-import { AboutMeData } from "../data/AboutMeData"
+import { AboutData } from "../data/AboutData"
 
 import Journey from "../components/Journey"
 import Dialog from "../components/Dialog";
@@ -10,7 +10,7 @@ import FadeAnimation from "../components/FadeAnimation";
 
 const HeadingStyle = "text-blue-800 text-[2rem] font-bold text-center"
 
-export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
+export default function About({ RefProp }: { RefProp: React.RefObject<HTMLElement | null> }) {
     const DialogRef = useRef<DialogAction>(null);
     
     const OpenDialog = (Images: Image[], Index: number) => {
@@ -23,7 +23,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                 <div className="w-[80%] my-[6rem] flex items-center flex-col gap-[2rem] border-[0.05rem] border-solid border-blue-800 border-opacity-[0.2] shadow-[0.01rem_0.01rem_0.155rem] shadow-blue-800 p-10 bg-blue-800 bg-opacity-[0.1]">
                     <div className="w-full">
                         <h1 className={HeadingStyle}>
-                            About Me
+                            About
                         </h1>
                         
                         <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] my-[2rem]" Direction="right">
@@ -40,21 +40,21 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         <h1 className={HeadingStyle}>
                             Education &amp; Scholarship
                         </h1>
-                        <Journey Props={AboutMeData.EducationAndScholarship} />
+                        <Journey Props={AboutData.EducationAndScholarship} />
                     </div>
 
                     <div className="w-full">
                         <h1 className={HeadingStyle}>
                             Work Experience
                         </h1>
-                        <Journey Props={AboutMeData.WorkExperience} />
+                        <Journey Props={AboutData.WorkExperience} />
                     </div>
 
                     <div className="w-full">
                         <h1 className={HeadingStyle}>
-                            Organization Experience
+                            Organizational Experience
                         </h1>
-                        <Journey Props={AboutMeData.OrganizationExperience} />
+                        <Journey Props={AboutData.OrganizationExperience} />
                     </div>
 
                     <div className="w-full">
@@ -68,7 +68,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                         Soft Skills
                                     </h2>
                                     <div className="h-[15rem] mt-[1rem] flex justify-center items-center flex-wrap gap-[2rem] p-[1rem]">
-                                        {AboutMeData.SoftSkills.map((SoftSkill, SoftSkillIndex) => (
+                                        {AboutData.SoftSkills.map((SoftSkill, SoftSkillIndex) => (
                                             <div className="w-[calc(50%-1rem)] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500" key={SoftSkillIndex}>
                                                 <h2>
                                                     {SoftSkill}
@@ -83,7 +83,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                         Languages
                                     </h2>
                                     <div className="h-[15rem] mt-[1rem] flex justify-center items-center flex-wrap p-[1rem]">
-                                        {AboutMeData.Languages.map((Language, LanguageIndex) => (
+                                        {AboutData.Languages.map((Language, LanguageIndex) => (
                                             <div className="w-full bg-blue-700 text-white text-center rounded-[0.5rem]" key={LanguageIndex}>
                                                 <div className="bg-blue-800 p-[0.25rem] rounded-t-[0.5rem]">
                                                     <h2 className="font-bold">
@@ -106,7 +106,7 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                                     Hard Skills
                                 </h2>
                                 <div className="mt-[1rem] flex items-center gap-x-[calc(15%/4)] gap-y-[2rem] flex-wrap p-[1rem]">
-                                    {AboutMeData.HardSkills.map((HardSkill, HardSkillIndex) => (
+                                    {AboutData.HardSkills.map((HardSkill, HardSkillIndex) => (
                                         <div className="w-[17%] bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.5rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500 flex justify-center items-center gap-[1rem]" key={HardSkillIndex}>
                                             <img src={HardSkill.Source} alt={HardSkill.Alternative} className="h-[2rem]" />
                                             <h2>
@@ -126,16 +126,16 @@ export default function AboutMe({ RefProp }: { RefProp: React.RefObject<HTMLElem
                         
                         <FadeAnimation className="w-full bg-blue-800 bg-opacity-[0.1] p-[2rem] mt-[2rem] flex justify-center items-center flex-col" Direction="right">
                             <div className="mb-[2rem] w-full flex justify-between">
-                                {AboutMeData.Certifications.slice(0, 5).map((Certification, CertificationIndex) => (
+                                {AboutData.Certifications.slice(0, 5).map((Certification, CertificationIndex) => (
                                     <div className="w-[17%] flex justify-start items-center flex-col" key={CertificationIndex}>
-                                        <img src={Certification.Source} alt={Certification.Alternative} className="h-[8rem] rounded-[0.5rem] cursor-pointer transition-all duration-300 hover:scale-[105%]" title="View Certificate" onClick={() => OpenDialog(AboutMeData.Certifications, CertificationIndex)} />
+                                        <img src={Certification.Source} alt={Certification.Alternative} className="h-[8rem] rounded-[0.5rem] cursor-pointer transition-all duration-300 hover:scale-[105%]" title="View Certificate" onClick={() => OpenDialog(AboutData.Certifications, CertificationIndex)} />
                                         <p className="mt-[0.5rem] px-[0.5rem] text-center">
                                             {Certification.Alternative}
                                         </p>
                                     </div>
                                 ))}
                             </div>
-                            <div className="group box-content w-[10%] pr-[0.2rem] pb-[0.2rem] hover:pr-0 hover:pb-0 hover:pt-[0.2rem] hover:pl-[0.2rem] cursor-pointer" onClick={() => OpenDialog(AboutMeData.Certifications, 5)}>
+                            <div className="group box-content w-[10%] pr-[0.2rem] pb-[0.2rem] hover:pr-0 hover:pb-0 hover:pt-[0.2rem] hover:pl-[0.2rem] cursor-pointer" onClick={() => OpenDialog(AboutData.Certifications, 5)}>
                                 <div className="
                                         w-full bg-blue-800 text-white text-center rounded-[0.5rem] p-[0.25rem] shadow-[0.2rem_0.2rem_0.155rem] shadow-blue-500
                                         group-hover:shadow-none

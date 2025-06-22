@@ -36,10 +36,10 @@ export default function NavBar({ ChangeSection }: { ChangeSection: (Section: str
                     </Link>
 
                     <Link to=""
-                        className={ActiveNavMenu === 'AboutMe' ? NavMenuActiveStyle : NavMenuStyle}
-                        onClick={() => HandleOnClick('AboutMe')}
+                        className={ActiveNavMenu === 'About' ? NavMenuActiveStyle : NavMenuStyle}
+                        onClick={() => HandleOnClick('About')}
                     >
-                        About Me
+                        About
                     </Link>
 
                     <Link to=""

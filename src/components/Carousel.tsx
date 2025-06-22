@@ -2,19 +2,19 @@ import { useEffect, useRef, useState } from "react";
 
 import { Image } from "../interfaces/Interfaces";
 
-import MicrosoftAIOverview from '../assets/sections/AboutMe/Microsoft AI Overview.png'
-import MicrosoftComputerVision from '../assets/sections/AboutMe/Microsoft Computer Vision.png'
-import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/AboutMe/Microsoft Document Intelligence and Knowledge Mining.png'
-import MicrosoftGenerativeAI from '../assets/sections/AboutMe/Microsoft Generative AI.png'
-import MicrosoftNaturalLanguageProcessing from '../assets/sections/AboutMe/Microsoft Natural Language Processing.png'
-import AdvancedSQL from '../assets/sections/AboutMe/SQL (Advanced).png'
-import IntroductiontoHTML from '../assets/sections/AboutMe/Introduction to HTML.jpg'
-import IntroductiontoCSS from '../assets/sections/AboutMe/Introduction to CSS.jpg'
-import JavaScriptIntermediate from '../assets/sections/AboutMe/JavaScript Intermediate.jpg'
-import PHP from '../assets/sections/AboutMe/PHP.jpg'
-import IntroductiontoCSharp from '../assets/sections/AboutMe/Introduction to C Sharp.jpg'
-import IntroductiontoPython from '../assets/sections/AboutMe/Introduction to Python.jpg'
-import CIntermediate from '../assets/sections/AboutMe/C Intermediate.jpg'
+import MicrosoftAIOverview from '../assets/sections/About/Microsoft AI Overview.png'
+import MicrosoftComputerVision from '../assets/sections/About/Microsoft Computer Vision.png'
+import MicrosoftDocumentIntelligenceandKnowledgeMining from '../assets/sections/About/Microsoft Document Intelligence and Knowledge Mining.png'
+import MicrosoftGenerativeAI from '../assets/sections/About/Microsoft Generative AI.png'
+import MicrosoftNaturalLanguageProcessing from '../assets/sections/About/Microsoft Natural Language Processing.png'
+import AdvancedSQL from '../assets/sections/About/SQL (Advanced).png'
+import IntroductiontoHTML from '../assets/sections/About/Introduction to HTML.jpg'
+import IntroductiontoCSS from '../assets/sections/About/Introduction to CSS.jpg'
+import JavaScriptIntermediate from '../assets/sections/About/JavaScript Intermediate.jpg'
+import PHP from '../assets/sections/About/PHP.jpg'
+import IntroductiontoCSharp from '../assets/sections/About/Introduction to C Sharp.jpg'
+import IntroductiontoPython from '../assets/sections/About/Introduction to Python.jpg'
+import CIntermediate from '../assets/sections/About/C Intermediate.jpg'
 
 const slides: Image[] = [
     {
